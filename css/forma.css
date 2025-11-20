@@ -24,7 +24,7 @@
   margin-top: 40px;
 }
 
-.forma-text p{
+.forma-text p {
   font-weight: bold;
   font-size: 50px;
   line-height: 111%;
@@ -33,7 +33,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 .forma_ {
   margin: 0;
@@ -60,6 +59,11 @@
 
 label {
   margin: 0;
+  font-family: "Ruberoid";
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 154%;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .field {
@@ -104,7 +108,6 @@ label {
   line-height: 153.8%;
 }
 
-
 .phone-container {
   margin: 0;
 }
@@ -129,9 +132,7 @@ label {
   background-image: url(../img/Mockup.png);
   background-size: contain;
   background-repeat: no-repeat;
-  
 }
-
 
 .notification {
   /* position: absolute; */
@@ -218,16 +219,41 @@ label {
 
 @media (max-width: 1560px) {
   .notification-end {
-    visibility: hidden;
-}
+    display: none;
+  }
   .notification {
-    visibility: hidden;
-}
+    display: none;
+  }
 }
 
-@media(max-width: 1440px) {
-  
+@media (max-width: 1440px) {
+  .forma-container {
+    justify-content: center;
+  }
+
   .phone-container {
     display: none;
+  }
+
+  .forma-text p {
+    text-align: center;
+    font-size: 37px;
+  }
+
+  .forma {
+    height: 667px;
+  }
+
+  .forma_ {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .field {
+  width: 328px;
+  }
+  .button-forma_container {
+    margin-top: 0;
+    width: 184px;
   }
 }
