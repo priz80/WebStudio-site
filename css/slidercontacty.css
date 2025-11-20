@@ -141,7 +141,7 @@
 
 @media (max-width: 1280px) {
   .contact-ball_container {
-    /* margin-top: 40px; */
+    margin: 0;
     width: 100%;
     /* display: flex;
     justify-content: center; */
