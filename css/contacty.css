@@ -21,6 +21,9 @@
   color: #fff;
 }
 
+.phone-container_m {
+  display: none;
+}
 
 .star {
   width: 32px;
@@ -37,6 +40,7 @@
   background-image: url(../img/starsmall.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  opacity: 50%;
 }
 
 .star-left_up {
@@ -55,6 +59,28 @@
 
 @media (max-width: 1280px) {
   .contact-text p {
-  display: none;
+    display: none;
+  }
 }
+
+@media (max-width: 1440px) {
+  .phone-container_m {
+    display: contents;
+  }
+.phone-block {
+    width: 254px;
+    height: 454px;
+    background-image: url(../img/Blue-m.png);
+    margin-top: 0;
+  }
+  .phone-image {
+    width: 226px;
+    height: 480px;
+    background-image: url(../img/Mockup-m.png);
+    margin-top: 52px;
+  }
+
+  .star-left {
+    display: none;
+  }
 }
