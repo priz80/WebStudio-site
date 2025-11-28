@@ -123,7 +123,7 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -29px;
+  margin-top: -28px;
 }
 
 .phone-image {
@@ -146,7 +146,6 @@ label {
   display: flex;
   align-items: center;
   margin: 0;
-
 }
 
 .notification-up {
@@ -187,22 +186,24 @@ label {
   margin-top: 6px;
 }
 
-
 @media (max-width: 1440px) {
   .forma-container {
     flex-direction: column;
     justify-content: center;
   }
 
-.phone-block {
-  background-image: url(../img/iPhone-m.png);
-  margin-top: 156px;
-}
+  .phone-container {
+    display: flex;
+    display: flex;
+  }
 
-/* .phone-image {
-  background-image: url(../img/Mockup-m.png);
-  margin-top: 12px;
-} */
+  .phone-block {
+    background-image: url(../img/iPhone-m.png);
+    margin-top: 156px;
+
+  }
+
+
 
   .forma-text p {
     text-align: center;
