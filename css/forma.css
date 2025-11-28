@@ -18,6 +18,7 @@
 
 .forma-block {
   margin: 0;
+  min-width: 932px;
 }
 
 .forma-text {
@@ -37,7 +38,6 @@
 .forma_ {
   margin: 0;
   margin-top: 25px;
-  width: 923px;
   display: flex;
   flex-wrap: wrap;
   gap: 22px;
@@ -109,6 +109,7 @@ label {
 }
 
 .phone-container {
+  position: relative;
   margin: 0;
 }
 
@@ -135,17 +136,25 @@ label {
 }
 
 .notification {
-  /* position: absolute; */
+  position: absolute;
   border-radius: 29px;
-  min-width: 213px;
+  max-width: 213px;
   height: 58px;
   backdrop-filter: blur(30px);
   background: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   margin: 0;
-  margin-top: 76px;
-  margin-right: -100px;
+
+}
+
+.notification-up {
+  top: 76px;
+  left: -125px;
+}
+.notification-down {
+  top: 242px;
+  right: -138px;
 }
 
 .notification-image {
@@ -162,9 +171,6 @@ label {
   margin-top: 6px;
 }
 
-/* .notification-text {
-} */
-
 .notification-text_title {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.9);
@@ -175,65 +181,21 @@ label {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.notification-end {
-  /* position: absolute; */
-  border-radius: 29px;
-  min-width: 213px;
-  height: 58px;
-  backdrop-filter: blur(30px);
-  background: rgba(255, 255, 255, 0.1);
-  display: flex;
-  align-items: center;
-  margin: 0;
-  margin-top: 242px;
-  margin-left: -85px;
-}
-
-.notification-image_end {
-  position: relative;
-  width: 43px;
-  height: 43px;
-  margin: 9px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .notification-image_ball {
   position: absolute;
   margin-top: 6px;
 }
 
-/* .notification-text {
-} */
-
-.notification-text_title_end {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.9);
-}
-.notification-text_subtitle_end {
-  font-size: 12px;
-  line-height: 106%;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-@media (max-width: 1560px) {
-  .notification-end {
-    display: none;
-  }
-  .notification {
-    display: none;
-  }
-}
 
 @media (max-width: 1440px) {
   .forma-container {
+    flex-direction: column;
     justify-content: center;
   }
 
-  .phone-container {
+  /* .phone-container {
     display: none;
-  }
+  } */
 
   .forma-text p {
     text-align: center;
@@ -250,8 +212,9 @@ label {
   }
 
   .field {
-  width: 328px;
+    width: 328px;
   }
+
   .button-forma_container {
     margin-top: 0;
     width: 184px;
