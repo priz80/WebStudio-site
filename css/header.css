@@ -3,6 +3,8 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   overflow: hidden;
+  min-height: 1055px;
+  position: relative;
 }
 
 .header-container {
