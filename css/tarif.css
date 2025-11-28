@@ -1,3 +1,8 @@
+.tarif {
+    min-height: 984px;
+    /* position: relative; */
+}
+
 .tarif-container {
   margin-top: 46px;
   margin-bottom: 214px;
