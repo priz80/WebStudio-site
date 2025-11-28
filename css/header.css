@@ -21,8 +21,12 @@
 }
 
 .lamp {
+  max-width: 127px;
   min-height: 49px;
   margin-left: 504px;
+  background-image: url(../img/lamp.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .menu {
