@@ -117,13 +117,13 @@ label {
 .phone-block {
   width: 269px;
   height: 528px;
-  background-image: url(../img/Blue.png);
+  background-image: url(../img/iphone.png);
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -28px;
+  margin-top: -29px;
 }
 
 .phone-image {
@@ -194,9 +194,15 @@ label {
     justify-content: center;
   }
 
-  /* .phone-container {
-    display: none;
-  } */
+.phone-block {
+  background-image: url(../img/iPhone-m.png);
+  margin-top: 156px;
+}
+
+/* .phone-image {
+  background-image: url(../img/Mockup-m.png);
+  margin-top: 12px;
+} */
 
   .forma-text p {
     text-align: center;
@@ -205,6 +211,7 @@ label {
 
   .forma {
     height: 667px;
+    margin-bottom: 459px;
   }
 
   .forma_ {
