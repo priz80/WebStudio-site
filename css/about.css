@@ -6,10 +6,12 @@
 
 .about-text {
   margin: 0;
+  max-width: 692px;
 }
 
 .about-block {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 32px;
   gap: 35px;
 }
@@ -24,9 +26,9 @@
   margin-bottom: 20px;
 }
 
-.about-descriptions::after {
+/* .about-descriptions::after {
   content: "Пока конкуренты говорят о том, что они лучшие - мы это доказываем делом.";
-}
+} */
 
 .button-about_block {
   margin: 0;
@@ -167,17 +169,17 @@
     font-size: 29px;
   }
 
-  .about-descriptions {
+/*   .about-descriptions {
     text-align: center;
   }
 
   .about-descriptions::after {
     content: "Вы можете ознакомиться с информацией о нас и посмотреть наше портфолио";
-  }
+  } */
 
-  .about-description {
+/*   .about-description {
     display: none;
-  }
+  } */
 
   .button-about_block {
     width: 139px;
