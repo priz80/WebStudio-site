@@ -48,103 +48,113 @@
   <body>
     <div class="slider-sl">
       <!-- slides -->
-      <div
-        class="slides-sl"
-        id="slidesContainer"
-        style="transform: translateX(-100%)"
-      >
+      <div class="slides-sl" id="slidesContainer" style="transform: translateX(-100%)">
         <!-- slide_1 -->
         <div class="slide-sl">
-          <!-- <div class="header">
-            <div class="header-container">
-              <div class="aside">
-                <div class="aside-line aside-line_header">
-                  <div class="aside-point_container aside-point_container_01">
-                    <div class="aside-number aside-number_light">01</div>
-                    <div class="aside-point_border aside-point_border_light">
-                      <div class="aside-point aside-point_light"></div>
-                    </div>
+          <section class="header">
+            <aside class="aside">
+              <div class="aside-line aside-line_header">
+                <div class="aside-point_container aside-point_container_01">
+                  <div class="aside-number aside-number_light">01</div>
+                  <div class="aside-point_border aside-point_border_light">
+                    <div class="aside-point aside-point_light"></div>
                   </div>
-                  <div class="aside-point_container">
-                    <div class="aside-number aside-number_dark">02</div>
-                    <div class="aside-point_border aside-point_border_dark">
-                      <div class="aside-point aside-point_dark"></div>
-                    </div>
+                </div>
+                <div class="aside-point_container">
+                  <div class="aside-number aside-number_dark">02</div>
+                  <div class="aside-point_border aside-point_border_dark">
+                    <div class="aside-point aside-point_dark"></div>
                   </div>
-                  <div class="aside-point_container">
-                    <div class="aside-number aside-number_dark">03</div>
-                    <div class="aside-point_border aside-point_border_dark">
-                      <div class="aside-point aside-point_dark"></div>
-                    </div>
+                </div>
+                <div class="aside-point_container">
+                  <div class="aside-number aside-number_dark">03</div>
+                  <div class="aside-point_border aside-point_border_dark">
+                    <div class="aside-point aside-point_dark"></div>
                   </div>
-                  <div class="aside-point_container">
-                    <div class="aside-number aside-number_dark">04</div>
-                    <div class="aside-point_border aside-point_border_dark">
-                      <div class="aside-point aside-point_dark"></div>
-                    </div>
+                </div>
+                <div class="aside-point_container">
+                  <div class="aside-number aside-number_dark">04</div>
+                  <div class="aside-point_border aside-point_border_dark">
+                    <div class="aside-point aside-point_dark"></div>
                   </div>
-                  <div class="aside-point_container">
-                    <div class="aside-number aside-number_dark">05</div>
-                    <div class="aside-point_border aside-point_border_dark">
-                      <div class="aside-point aside-point_dark"></div>
-                    </div>
+                </div>
+                <div class="aside-point_container">
+                  <div class="aside-number aside-number_dark">05</div>
+                  <div class="aside-point_border aside-point_border_dark">
+                    <div class="aside-point aside-point_dark"></div>
                   </div>
                 </div>
               </div>
-              <div class="container">
-                <div class="lamp"></div>
-                <div class="menu">
-                  <div class="logo">
-                    <div class="logo-studio">studio</div>
-                    <div class="logo-web">web</div>
-                  </div>
-                  <menu class="main-menu">
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Почему именно мы?</a></li>
-                    <li><a href="#">Контакты</a></li>
-                  </menu>
-                  <div class="button">
-                    <div class="button-image">
-                      <div class="text">
-                        <a href="#"><p>Заказать</p></a>
-                      </div>
+            </aside>
+            <div class="container header-container">
+              <div class="lamp">
+                <img src="./img/lamp.svg" alt="" />
+              </div>
+              <ul class="main-menu_mobile" id="menu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#about">Почему именно мы?</a></li>
+                <li><a href="#about">Портфолио</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a href="#forma">Оставить заявку</a></li>
+              </ul>
+              <nav class="menu">
+                <div class="logo">
+                  <div class="logo-studio"></div>
+                  <div class="logo-web"></div>
+                </div>
+                <ul class="main-menu">
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#about">Почему именно мы?</a></li>
+                  <li><a href="#contact">Контакты</a></li>
+                </ul>
+                <div class="button">
+                  <div class="button-image">
+                    <div class="text">
+                      <a href="#forma"><p>Заказать</p></a>
                     </div>
                   </div>
                 </div>
+                <div class="burger" id="burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </nav>
+              <header>
                 <div class="header-content">
                   <div class="header-text">
-                    <h1>Разработка сайтов</h1>
-                    <h2>для твоего бизнеса</h2>
-                    <p class="header-description">
-                      Мы - студия web-разработки, работаем уже более 3-х лет,
-                      готовы разработать для вас сайт в кротчайшие сроки.
-                    </p>
+                    <div>
+                      <h1>Разработка сайтов</h1>
+                      <p class="h1-blur"></p>
+                    </div>
+                    <div class="h2">
+                      <h2>для твоего бизнеса</h2>
+                      <p class="h2-blur"></p>
+                    </div>
+                    <h3></h3>
                     <div class="button-block">
-                      <button class="details" onclick="nextSlide()">
+                      <button class="details" onclick="prevSlide()">
                         <div class="button-text">
                           <p class="button-description">На главную</p>
                           <img src="./img/arrow.svg" alt="" />
                         </div>
                       </button>
-                      <a href="#"><p class="question">Остались вопросы?</p></a>
+                      <a href="#contact">
+                        <span class="question">Остались вопросы?</span>
+                      </a>
                     </div>
                   </div>
                   <div class="man">
-                    <div class="man-image">
-                      
-                    </div>
-                    <div class="circle-image">
-                      
-                    </div>
+                    <div class="man-image"></div>
+                    <div class="circle-image"></div>
                   </div>
                 </div>
-              </div>
+              </header>
             </div>
             <div class="line"></div>
-          </div> -->
-          <!-- <main> -->
-          <!-- <section class="about" id="about">
-            <div class="aside">
+          </section>
+          <section class="about" id="about">
+            <aside class="aside">
               <div class="aside-line aside-line_about">
                 <div class="aside-point_container aside-point_container_02">
                   <div class="aside-number aside-number_light">02</div>
@@ -171,22 +181,24 @@
                   </div>
                 </div>
               </div>
+            </aside>
+            <div class="info">
+              <span>Работаем в сфере web-разработки более 3-х лет</span>
+            </div>
+            <div class="info">
+              <span>В нашей команде находятся лучшие исполнители</span>
             </div>
             <div class="container about-container">
               <div class="about-block">
                 <div class="about-text">
-                  <h3 class="h3-about">Причины сотрудничать с нами</h3>
-                  <p class="about-description">
-                    Вы можете посмотреть на сайты конкурентов где они кричат что
-                    лучшие, пока они только говорят об этом - мы говорим языком
-                    фактов
-                  </p>
-                  <p class="about-description">
-                    Вы можете за пару минут прочитать о нас информацию, а так же
-                    после этого посмотреть наше портфолио
-                  </p>
+                  <h4 class="h3-about">Причины сотрудничать с нами</h4>
+                  <h5 class="about-descriptions"></h5>
+                  <h5 class="about-description">
+                    Вы можете ознакомиться с информацией о нас и посмотреть наше
+                    портфолио
+                  </h5>
                   <div class="button-about_block">
-                    <a href="#"
+                    <a href="#portfolio"
                       ><button type="button" class="button-about">
                         <p>Портфолио</p>
                       </button></a
@@ -198,8 +210,8 @@
                   <div class="about-card_text">
                     <div class="about-card_title">Приемлимые цены</div>
                     <div class="about-card_subtitle">
-                      Мы максимально стараемся снизить цены на нашу работу для
-                      того чтобы цены не кусались
+                      Мы максимально оптимизируем наш труд, для того, чтобы цены
+                      были доступными
                     </div>
                     <div class="about-card_image about-image_prise"></div>
                   </div>
@@ -240,135 +252,11 @@
                 </div>
               </div>
             </div>
-          </section> -->
-          <!-- <section class="portfolio" id="portfolio">
-            <div class="aside">
-              <div class="aside-line aside-line_portfolio">
-                <div class="aside-point_container aside-point_container_03">
-                  <div class="aside-number aside-number_light">03</div>
-                  <div class="aside-point_border aside-point_border_light">
-                    <div class="aside-point aside-point_light"></div>
-                  </div>
-                </div>
-                <div class="aside-point_container">
-                  <div class="aside-number aside-number_dark">04</div>
-                  <div class="aside-point_border aside-point_border_dark">
-                    <div class="aside-point aside-point_dark"></div>
-                  </div>
-                </div>
-                <div class="aside-point_container">
-                  <div class="aside-number aside-number_dark">05</div>
-                  <div class="aside-point_border aside-point_border_dark">
-                    <div class="aside-point aside-point_dark"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="container portfolio-container">
-              <div class="portfolio-block">
-                <div class="portfolio-text">
-                  <h3>Наше портфолио</h3>
-                  <p class="portfolio-description">
-                    В данном портфолио вы сможете увидеть кейсы наших работ на
-                    2022 - 2023 год
-                  </p>
-                  <button class="button-portfolio">
-                    <p>Компьютерные версии</p>
-                  </button>
-                </div>
-                <div class="slider-portfolio"></div>
-              </div>
-            </div>
-          </section> -->
-          <!-- <section class="tarif" id="">
-            <div class="aside">
-              <div class="aside-line aside-line_tarif">
-                <div class="aside-point_container aside-point_container_04">
-                  <div class="aside-number aside-number_light">04</div>
-                  <div class="aside-point_border aside-point_border_light">
-                    <div class="aside-point aside-point_light"></div>
-                  </div>
-                </div>
-                <div class="aside-point_container">
-                  <div class="aside-number aside-number_dark">05</div>
-                  <div class="aside-point_border aside-point_border_dark">
-                    <div class="aside-point aside-point_dark"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="container tarif-container">
-              <div class="tarif-block">
-                <div class="tarif-text">
-                  <h3>Тарифы</h3>
-                </div>
-                <div class="slider-tarif">
-                  <div class="tarif-card"></div>
-                  <div class="tarif-card_main"></div>
-                  <div class="tarif-card"></div>
-                </div>
-              </div>
-            </div>
-          </section> -->
-          <!-- <section class="forma" id="">
-            <div class="container forma-container">
-              <div class="forma-block">
-                <div class="forma-text">
-                  <h4>Оставь заявку</h4>
-                </div>
-                <form action="" class="forma_">
-                  <div class="description">
-                    <p>Ваше ФИО</p>
-                    <input class="field" type="text" placeholder="Имя" />
-                  </div>
-                  <div class="description">
-                    <p>Ваш номер телефона</p>
-                    <input class="field" type="text" placeholder="Телефон" />
-                  </div>
-                  <div class="description">
-                    <p>Бюджет на сайт</p>
-                    <input class="field" type="number" placeholder="Бюджет" />
-                  </div>
-                  <div class="description">
-                    <p>Ваш E-MAIL адрес</p>
-                    <input class="field" type="email" placeholder="E-mail" />
-                  </div>
-                  <div class="description">
-                    <p>Ваш комментарий (по желанию)</p>
-                    <input
-                      class="field"
-                      type="text"
-                      placeholder="Комментарий"
-                    />
-                  </div>
-                  <div class="button-forma_container">
-                    <button type="submit" class="button-forma">
-                      <p>Отправить</p>
-                    </button>
-                  </div>
-                </form>
-              </div>
-              <div class="phone-block"></div>
-            </div>
-          </section> -->
-          <!-- <section class="contact" id="">
-            <div class="container contact-container">
-              <div class="contact-block">
-                <div class="star-small star-right_up"></div>
-                <div class="contact-text">
-                  <div class="star star-left_up"></div>
-                  <h5>Контакты</h5>
-                  <div class="star star-right"></div>
-                </div>
-                <div class="star-small star-left"></div>
-              </div>
-            </div>
-          </section> -->
-          <!-- </main> -->
+          </section>
         </div>
         <!-- end slide_1 -->
         <!-- slide_2 -->
-        <div class="slide-sl">
+        <header class="slide-sl">
           <section class="header">
             <aside class="aside">
               <div class="aside-line aside-line_header">
@@ -471,550 +359,524 @@
             </div>
             <div class="line"></div>
           </section>
-          <main>
-            <section class="about" id="about">
-              <aside class="aside">
-                <div class="aside-line aside-line_about">
-                  <div class="aside-point_container aside-point_container_02">
-                    <div class="aside-number aside-number_light">02</div>
-                    <div class="aside-point_border aside-point_border_light">
-                      <div class="aside-point aside-point_light"></div>
-                    </div>
-                  </div>
-                  <div class="aside-point_container">
-                    <div class="aside-number aside-number_dark">03</div>
-                    <div class="aside-point_border aside-point_border_dark">
-                      <div class="aside-point aside-point_dark"></div>
-                    </div>
-                  </div>
-                  <div class="aside-point_container">
-                    <div class="aside-number aside-number_dark">04</div>
-                    <div class="aside-point_border aside-point_border_dark">
-                      <div class="aside-point aside-point_dark"></div>
-                    </div>
-                  </div>
-                  <div class="aside-point_container">
-                    <div class="aside-number aside-number_dark">05</div>
-                    <div class="aside-point_border aside-point_border_dark">
-                      <div class="aside-point aside-point_dark"></div>
-                    </div>
+          <section class="about" id="about">
+            <aside class="aside">
+              <div class="aside-line aside-line_about">
+                <div class="aside-point_container aside-point_container_02">
+                  <div class="aside-number aside-number_light">02</div>
+                  <div class="aside-point_border aside-point_border_light">
+                    <div class="aside-point aside-point_light"></div>
                   </div>
                 </div>
-              </aside>
-              <div class="info">
-                <span>Работаем в сфере web-разработки более 3-х лет</span>
-              </div>
-              <div class="info">
-                <span>В нашей команде находятся лучшие исполнители</span>
-              </div>
-              <div class="container about-container">
-                <div class="about-block">
-                  <div class="about-text">
-                    <h4 class="h3-about">Причины сотрудничать с нами</h4>
-                    <h5 class="about-descriptions"></h5>
-                    <h5 class="about-description">
-                      Вы можете ознакомиться с информацией о нас и посмотреть
-                      наше портфолио
-                    </h5>
-                    <div class="button-about_block">
-                      <a href="#portfolio"
-                        ><button type="button" class="button-about">
-                          <p>Портфолио</p>
-                        </button></a
-                      >
-                      <div class="button-about_shadow"></div>
-                    </div>
-                  </div>
-                  <div class="about-card about-card_prise">
-                    <div class="about-card_text">
-                      <div class="about-card_title">Приемлимые цены</div>
-                      <div class="about-card_subtitle">
-                        Мы максимально оптимизируем наш труд, для того, чтобы
-                        цены были доступными
-                      </div>
-                      <div class="about-card_image about-image_prise"></div>
-                    </div>
+                <div class="aside-point_container">
+                  <div class="aside-number aside-number_dark">03</div>
+                  <div class="aside-point_border aside-point_border_dark">
+                    <div class="aside-point aside-point_dark"></div>
                   </div>
                 </div>
-                <div class="about-block">
-                  <div class="about-card">
-                    <div class="about-card_text">
-                      <div class="about-card_title">В сроки сдаем работу!</div>
-                      <div class="about-card_subtitle">
-                        Расписываем каждый этап по срокам, и придерживаемся
-                        дедлайнов
-                      </div>
-                      <div class="about-card_image about-image_time"></div>
-                    </div>
+                <div class="aside-point_container">
+                  <div class="aside-number aside-number_dark">04</div>
+                  <div class="aside-point_border aside-point_border_dark">
+                    <div class="aside-point aside-point_dark"></div>
                   </div>
-                  <div class="about-card">
-                    <div class="about-card_text">
-                      <div class="about-card_title">Команда специалистов</div>
-                      <div class="about-card_subtitle">
-                        В нашей команде множество специалистов, и каждый из них
-                        хорошо знает свое дело
-                      </div>
-                      <div class="about-card_image about-image_employ"></div>
-                    </div>
-                  </div>
-                  <div class="about-card">
-                    <div class="about-card_text">
-                      <div class="about-card_title">
-                        Консультация перед заказом
-                      </div>
-                      <div class="about-card_subtitle">
-                        Наши менеджеры в сети 24/7, и готовы помочь вам, а так
-                        же ответить на ваши вопросы
-                      </div>
-                      <div class="about-card_image about-image_support"></div>
-                    </div>
+                </div>
+                <div class="aside-point_container">
+                  <div class="aside-number aside-number_dark">05</div>
+                  <div class="aside-point_border aside-point_border_dark">
+                    <div class="aside-point aside-point_dark"></div>
                   </div>
                 </div>
               </div>
-            </section>
-            <section class="portfolio" id="portfolio">
-              <aside class="aside">
-                <div class="aside-line aside-line_portfolio">
-                  <div class="aside-point_container aside-point_container_03">
-                    <div class="aside-number aside-number_light">03</div>
-                    <div class="aside-point_border aside-point_border_light">
-                      <div class="aside-point aside-point_light"></div>
-                    </div>
-                  </div>
-                  <div class="aside-point_container">
-                    <div class="aside-number aside-number_dark">04</div>
-                    <div class="aside-point_border aside-point_border_dark">
-                      <div class="aside-point aside-point_dark"></div>
-                    </div>
-                  </div>
-                  <div class="aside-point_container">
-                    <div class="aside-number aside-number_dark">05</div>
-                    <div class="aside-point_border aside-point_border_dark">
-                      <div class="aside-point aside-point_dark"></div>
-                    </div>
+            </aside>
+            <div class="info">
+              <span>Работаем в сфере web-разработки более 3-х лет</span>
+            </div>
+            <div class="info">
+              <span>В нашей команде находятся лучшие исполнители</span>
+            </div>
+            <div class="container about-container">
+              <div class="about-block">
+                <div class="about-text">
+                  <h4 class="h3-about">Причины сотрудничать с нами</h4>
+                  <h5 class="about-descriptions"></h5>
+                  <h5 class="about-description">
+                    Вы можете ознакомиться с информацией о нас и посмотреть наше
+                    портфолио
+                  </h5>
+                  <div class="button-about_block">
+                    <a href="#portfolio"
+                      ><button type="button" class="button-about">
+                        <p>Портфолио</p>
+                      </button></a
+                    >
+                    <div class="button-about_shadow"></div>
                   </div>
                 </div>
-              </aside>
-              <div class="container portfolio-container">
-                <div class="portfolio-block">
-                  <div class="portfolio-text">
-                    <h4>Наше портфолио</h4>
-                    <h5 class="portfolio-description">
-                      В данном портфолио вы сможете увидеть кейсы наших работ на
-                      2022 - 2023 год
-                    </h5>
-                    <button class="button-portfolio">
-                      <p>Компьютерные версии</p>
-                    </button>
-                  </div>
-                  <div class="slider-portfolio_container">
-                    <div class="slider-portfolio">
-                      <div class="slides-portfolio">
-                        <div class="slide-portfolio">
-                          <img
-                            src="./img/slider-portfolio/slide1.png"
-                            alt="Сайт 1"
-                            loading="lazy"
-                          />
-                        </div>
-                        <div class="slide-portfolio">
-                          <img
-                            src="./img/slider-portfolio/slide2.png"
-                            alt="Сайт 2"
-                            loading="lazy"
-                          />
-                        </div>
-                        <div class="slide-portfolio">
-                          <img
-                            src="./img/slider-portfolio/slide3.png"
-                            alt="Сайт 3"
-                            loading="lazy"
-                          />
-                        </div>
-                        <div class="slide-portfolio">
-                          <img
-                            src="./img/slider-portfolio/slide4.png"
-                            alt="Сайт 4"
-                            loading="lazy"
-                          />
-                        </div>
-                        <div class="slide-portfolio">
-                          <img
-                            src="./img/slider-portfolio/slide5.png"
-                            alt="Сайт 5"
-                            loading="lazy"
-                          />
-                        </div>
-                        <div class="slide-portfolio">
-                          <img
-                            src="./img/slider-portfolio/slide6.png"
-                            alt="Сайт 6"
-                            loading="lazy"
-                          />
-                        </div>
-                        <div class="slide-portfolio">
-                          <img
-                            src="./img/slider-portfolio/slide7.png"
-                            alt="Сайт 7"
-                            loading="lazy"
-                          />
-                        </div>
-                      </div>
+                <div class="about-card about-card_prise">
+                  <div class="about-card_text">
+                    <div class="about-card_title">Приемлимые цены</div>
+                    <div class="about-card_subtitle">
+                      Мы максимально оптимизируем наш труд, для того, чтобы цены
+                      были доступными
                     </div>
-                  </div>
-
-                  <div class="arrow arrow-portfolio">
-                    <div class="prev-container" id="prev-portfolio">
-                      <div class="prev">
-                        <img src="./img/arrowperv.svg" alt="" />
-                      </div>
-                    </div>
-                    <div class="next-container" id="next-portfolio">
-                      <div class="next">
-                        <img src="./img/arrownext.svg" alt="" />
-                      </div>
-                    </div>
+                    <div class="about-card_image about-image_prise"></div>
                   </div>
                 </div>
               </div>
-            </section>
-            <section class="tarif" id="tarif">
-              <aside class="aside">
-                <div class="aside-line aside-line_tarif">
-                  <div class="aside-point_container aside-point_container_04">
-                    <div class="aside-number aside-number_light">04</div>
-                    <div class="aside-point_border aside-point_border_light">
-                      <div class="aside-point aside-point_light"></div>
+              <div class="about-block">
+                <div class="about-card">
+                  <div class="about-card_text">
+                    <div class="about-card_title">В сроки сдаем работу!</div>
+                    <div class="about-card_subtitle">
+                      Расписываем каждый этап по срокам, и придерживаемся
+                      дедлайнов
                     </div>
-                  </div>
-                  <div class="aside-point_container">
-                    <div class="aside-number aside-number_dark">05</div>
-                    <div class="aside-point_border aside-point_border_dark">
-                      <div class="aside-point aside-point_dark"></div>
-                    </div>
+                    <div class="about-card_image about-image_time"></div>
                   </div>
                 </div>
-              </aside>
-              <div class="container tarif-container">
-                <div class="tarif-block">
-                  <div class="tarif-text">
-                    <h4>Тарифы</h4>
+                <div class="about-card">
+                  <div class="about-card_text">
+                    <div class="about-card_title">Команда специалистов</div>
+                    <div class="about-card_subtitle">
+                      В нашей команде множество специалистов, и каждый из них
+                      хорошо знает свое дело
+                    </div>
+                    <div class="about-card_image about-image_employ"></div>
                   </div>
-                  <div class="slider-tarif_container">
-                    <div class="slider-tarif">
-                      <div class="slides-tarif">
-                        <div
-                          class="slide-tarif over slide-tarif_img"
-                          style="transform: scale(0.8)"
-                        >
-                          <img src="./img/websiteicon.png" alt="" />
-                        </div>
-                        <div
-                          class="slide-tarif over"
-                          style="transform: scale(0.8)"
-                        >
-                          <div class="slide-text_container">
-                            <div class="slide-tarif_title">Сайт “Каталог”</div>
-                            <div class="slide-tarif_subtitle">
-                              Сайт-каталог – это полноценный веб-ресурс, в
-                              котором потребители могут ознакомиться с товарами
-                              или услугами компании. Являясь удобным
-                              инструментом продаж, сайт-каталог может повысить
-                              доходность бизнеса и упростить задачу по
-                              предоставлению ассортимента целевой аудитории.
-                            </div>
-                            <div class="slide-tarif_price">
-                              <div class="tarif-price">
-                                <p>От 60.000₽</p>
-                                <p>От 15 дней</p>
-                              </div>
-                              <div class="button-price"><p>Подробнее</p></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          class="slide-tarif over"
-                          style="transform: scale(0.8)"
-                        >
-                          <div class="slide-text_container">
-                            <div class="slide-tarif_title">Сайт “Визитка”</div>
-                            <div class="slide-tarif_subtitle">
-                              Сайт-визитка - компактный веб-ресурс – отличный
-                              старт бизнеса в интернете. Сайт-визитка содержит
-                              несколько страниц, в том числе – информацию о
-                              компании, её товарах и услугах, прейскурант цен,
-                              контакты и координаты для связи.
-                            </div>
-                            <div class="slide-tarif_price">
-                              <div class="tarif-price">
-                                <p>От 30.000₽</p>
-                                <p>От 5 дней</p>
-                              </div>
-                              <div class="button-price"><p>Подробнее</p></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          class="slide-tarif over"
-                          style="transform: scale(0.8)"
-                        >
-                          <div class="slide-text_container">
-                            <div class="slide-tarif_title">
-                              Сайт “Интернет магизин”
-                            </div>
-                            <div class="slide-tarif_subtitle">
-                              Сайт-визитка - компактный веб-ресурс – отличный
-                              старт бизнеса в интернете. Сайт-визитка содержит
-                              несколько страниц, в том числе – информацию о
-                              компании, её товарах и услугах, прейскурант цен,
-                              контакты и координаты для связи.
-                            </div>
-                            <div class="slide-tarif_price">
-                              <div class="tarif-price">
-                                <p>От 75.000₽</p>
-                                <p>От 30 дней</p>
-                              </div>
-                              <div class="button-price"><p>Подробнее</p></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          class="slide-tarif over"
-                          style="transform: scale(0.8)"
-                        >
-                          <div class="slide-text_container">
-                            <div class="slide-tarif_title">
-                              Сайт “Landing page”
-                            </div>
-                            <div class="slide-tarif_subtitle">
-                              Одностраничный сайт (Landing Page) – так называют
-                              промо-сайты для презентации товара, услуги и
-                              организации мгновенных продаж. Мы умеем создавать
-                              веб-ресурсы, полностью готовые к наплыву лавины
-                              посетителей. Одна-единственная страница принесёт
-                              колоссальную прибыль: иначе и быть не может.
-                            </div>
-                            <div class="slide-tarif_price">
-                              <div class="tarif-price">
-                                <p>От 25.000₽</p>
-                                <p>От 17 дней</p>
-                              </div>
-                              <div class="button-price"><p>Подробнее</p></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          class="slide-tarif over"
-                          style="transform: scale(0.8)"
-                        >
-                          <div class="slide-text_container">
-                            <div class="slide-tarif_title">
-                              Сайт “Корп.сайт”
-                            </div>
-                            <div class="slide-tarif_subtitle">
-                              Корпоративный сайт – это крупномасштабный портал,
-                              который создается не только для контакта
-                              организации с клиентами, но и для обмена
-                              информацией, мнениями, идеями между сотрудниками и
-                              руководством. Электронный ресурс такого типа –
-                              лицо компании, солидный «костюм», вызывающий у
-                              партнёров и контрагентов уважение и интерес.
-                            </div>
-                            <div class="slide-tarif_price">
-                              <div class="tarif-price">
-                                <p>От 60.000₽</p>
-                                <p>От 17 дней</p>
-                              </div>
-                              <div class="button-price"><p>Подробнее</p></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          class="slide-tarif over"
-                          style="transform: scale(0.8)"
-                        >
-                          <div class="slide-text_container">
-                            <div class="slide-tarif_title">
-                              Сайт “Индивидуальный”
-                            </div>
-                            <div class="slide-tarif_subtitle">
-                              Мы готовы выслушать вашу идею, и выполнить
-                              задание. Цена проекта будет складываться от ее
-                              технического задания и сроков выполнения.
-                            </div>
-                            <div class="slide-tarif_price">
-                              <div class="tarif-price">
-                                <p>От ?₽</p>
-                                <p>От ? дней</p>
-                              </div>
-                              <div class="button-price"><p>Подробнее</p></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          class="slide-tarif over slide-tarif_img"
-                          style="transform: scale(0.8)"
-                        >
-                          <img src="./img/websiteicon.png" alt="" />
-                        </div>
-                      </div>
+                </div>
+                <div class="about-card">
+                  <div class="about-card_text">
+                    <div class="about-card_title">
+                      Консультация перед заказом
                     </div>
-                    <div class="arrow arrow-tarif">
-                      <div class="prev-container" id="prev-tarif">
-                        <div class="prev">
-                          <img src="./img/arrowperv.svg" alt="" />
-                        </div>
-                      </div>
-                      <div class="next-container" id="next-tarif">
-                        <div class="next">
-                          <img src="./img/arrownext.svg" alt="" />
-                        </div>
-                      </div>
+                    <div class="about-card_subtitle">
+                      Наши менеджеры в сети 24/7, и готовы помочь вам, а так же
+                      ответить на ваши вопросы
                     </div>
+                    <div class="about-card_image about-image_support"></div>
                   </div>
                 </div>
               </div>
-            </section>
-            <section class="forma" id="forma">
-              <div class="container forma-container">
-                <div class="forma-block">
-                  <div class="forma-text">
-                    <p>Оставь заявку</p>
-                  </div>
-                  <form
-                    action="https://formsubmit.co/priz8090@gmail.com"
-                    method="POST"
-                    class="forma_"
-                  >
-                    <div class="description description_block">
-                      <label for="fio">Ваше ФИО</label>
-                      <input
-                        class="field"
-                        type="text"
-                        name="fio"
-                        placeholder="ФИО"
-                        id="fio"
-                        required
-                      />
-                    </div>
-                    <div class="description description_block">
-                      <label for="phone">Ваш номер телефона</label>
-                      <input
-                        class="field"
-                        type="text"
-                        name="phone"
-                        id="phone"
-                        placeholder="Телефон"
-                        autocomplete="on"
-                      />
-                    </div>
-                    <div class="description description_block">
-                      <label for="sum">Бюджет на сайт</label>
-                      <input
-                        class="field"
-                        type="number"
-                        name="summ"
-                        id="sum"
-                        placeholder="Бюджет"
-                      />
-                    </div>
-                    <div class="description description_block">
-                      <label for="email">Ваш E-MAIL адрес</label>
-                      <input
-                        class="field"
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="E-mail"
-                        required
-                        autocomplete="on"
-                      />
-                    </div>
-                    <div class="description description_block">
-                      <label for="description"
-                        >Ваш комментарий (по желанию)</label
-                      >
-                      <input
-                        class="field"
-                        type="text"
-                        name="description"
-                        id="description"
-                        placeholder="Комментарий"
-                      />
-                    </div>
-                    <input
-                      type="hidden"
-                      name="_subject"
-                      value="Новое сообщение с сайта StudioWeb!"
-                    />
-                    <div class="button-forma_container">
-                      <button type="submit" class="button-forma">
-                        <p>Отправить</p>
-                      </button>
-                    </div>
-                  </form>
-                </div>
-                <div class="notification">
-                  <div class="notification-image">
-                    <img src="./img/Ellipse 4.svg" alt="" />
-                    <div class="notification-image_phone">
-                      <img src="./img/Group4.svg" alt="" />
-                    </div>
-                  </div>
-                  <div class="notification-text">
-                    <p class="notification-text_title">Уведомление!</p>
-                    <p class="notification-text_subtitle">
-                      В скорейшем времени вам перезвонят
-                    </p>
-                  </div>
-                </div>
-                <div class="phone-container">
-                  <div class="phone-block">
-                    <div class="phone-image"></div>
-                  </div>
-                </div>
-
-                <div class="notification-end">
-                  <div class="notification-image_end">
-                    <img src="./img/Ellipse 5.svg" alt="" />
-                    <div class="notification-image_ball">
-                      <img src="./img/Group5.svg" alt="" />
-                    </div>
-                  </div>
-                  <div class="notification-text_end">
-                    <p class="notification-text_title_end">Работа закончена!</p>
-                    <p class="notification-text_subtitle_end">
-                      Мы закончили работу над вашим сайтом
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="contact" id="contact">
-              <div class="container contact-container">
-                <div class="contact-block">
-                  <div class="star-small star-right_up"></div>
-
-                  <div class="contact-text">
-                    <div class="star star-left_up"></div>
-                    <p>Контакты</p>
-                    <div class="phone-container_m">
-                      <div class="phone-block">
-                        <div class="phone-image"></div>
-                      </div>
-                    </div>
-                    <div class="star star-right"></div>
-                  </div>
-
-                  <div class="star-small star-left"></div>
-                </div>
-              </div>
-            </section>
-          </main>
-        </div>
+            </div>
+          </section>
+        </header>
         <!-- end slide_2 -->
       </div>
     </div>
+    <main>
+      <section class="portfolio" id="portfolio">
+        <aside class="aside">
+          <div class="aside-line aside-line_portfolio">
+            <div class="aside-point_container aside-point_container_03">
+              <div class="aside-number aside-number_light">03</div>
+              <div class="aside-point_border aside-point_border_light">
+                <div class="aside-point aside-point_light"></div>
+              </div>
+            </div>
+            <div class="aside-point_container">
+              <div class="aside-number aside-number_dark">04</div>
+              <div class="aside-point_border aside-point_border_dark">
+                <div class="aside-point aside-point_dark"></div>
+              </div>
+            </div>
+            <div class="aside-point_container">
+              <div class="aside-number aside-number_dark">05</div>
+              <div class="aside-point_border aside-point_border_dark">
+                <div class="aside-point aside-point_dark"></div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div class="container portfolio-container">
+          <div class="portfolio-block">
+            <div class="portfolio-text">
+              <h4>Наше портфолио</h4>
+              <h5 class="portfolio-description">
+                В данном портфолио вы сможете увидеть кейсы наших работ на 2022
+                - 2023 год
+              </h5>
+              <button class="button-portfolio">
+                <p>Компьютерные версии</p>
+              </button>
+            </div>
+            <div class="slider-portfolio_container">
+              <div class="slider-portfolio">
+                <div class="slides-portfolio">
+                  <div class="slide-portfolio">
+                    <img
+                      src="./img/slider-portfolio/slide1.png"
+                      alt="Сайт 1"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="slide-portfolio">
+                    <img
+                      src="./img/slider-portfolio/slide2.png"
+                      alt="Сайт 2"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="slide-portfolio">
+                    <img
+                      src="./img/slider-portfolio/slide3.png"
+                      alt="Сайт 3"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="slide-portfolio">
+                    <img
+                      src="./img/slider-portfolio/slide4.png"
+                      alt="Сайт 4"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="slide-portfolio">
+                    <img
+                      src="./img/slider-portfolio/slide5.png"
+                      alt="Сайт 5"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="slide-portfolio">
+                    <img
+                      src="./img/slider-portfolio/slide6.png"
+                      alt="Сайт 6"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="slide-portfolio">
+                    <img
+                      src="./img/slider-portfolio/slide7.png"
+                      alt="Сайт 7"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="arrow arrow-portfolio">
+              <div class="prev-container" id="prev-portfolio">
+                <div class="prev">
+                  <img src="./img/arrowperv.svg" alt="" />
+                </div>
+              </div>
+              <div class="next-container" id="next-portfolio">
+                <div class="next">
+                  <img src="./img/arrownext.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tarif" id="tarif">
+        <aside class="aside">
+          <div class="aside-line aside-line_tarif">
+            <div class="aside-point_container aside-point_container_04">
+              <div class="aside-number aside-number_light">04</div>
+              <div class="aside-point_border aside-point_border_light">
+                <div class="aside-point aside-point_light"></div>
+              </div>
+            </div>
+            <div class="aside-point_container">
+              <div class="aside-number aside-number_dark">05</div>
+              <div class="aside-point_border aside-point_border_dark">
+                <div class="aside-point aside-point_dark"></div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div class="container tarif-container">
+          <div class="tarif-block">
+            <div class="tarif-text">
+              <h4>Тарифы</h4>
+            </div>
+            <div class="slider-tarif_container">
+              <div class="slider-tarif">
+                <div class="slides-tarif">
+                  <div
+                    class="slide-tarif over slide-tarif_img"
+                    style="transform: scale(0.8)"
+                  >
+                    <img src="./img/websiteicon.png" alt="" />
+                  </div>
+                  <div class="slide-tarif over" style="transform: scale(0.8)">
+                    <div class="slide-text_container">
+                      <div class="slide-tarif_title">Сайт “Каталог”</div>
+                      <div class="slide-tarif_subtitle">
+                        Сайт-каталог – это полноценный веб-ресурс, в котором
+                        потребители могут ознакомиться с товарами или услугами
+                        компании. Являясь удобным инструментом продаж,
+                        сайт-каталог может повысить доходность бизнеса и
+                        упростить задачу по предоставлению ассортимента целевой
+                        аудитории.
+                      </div>
+                      <div class="slide-tarif_price">
+                        <div class="tarif-price">
+                          <p>От 60.000₽</p>
+                          <p>От 15 дней</p>
+                        </div>
+                        <div class="button-price"><p>Подробнее</p></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-tarif over" style="transform: scale(0.8)">
+                    <div class="slide-text_container">
+                      <div class="slide-tarif_title">Сайт “Визитка”</div>
+                      <div class="slide-tarif_subtitle">
+                        Сайт-визитка - компактный веб-ресурс – отличный старт
+                        бизнеса в интернете. Сайт-визитка содержит несколько
+                        страниц, в том числе – информацию о компании, её товарах
+                        и услугах, прейскурант цен, контакты и координаты для
+                        связи.
+                      </div>
+                      <div class="slide-tarif_price">
+                        <div class="tarif-price">
+                          <p>От 30.000₽</p>
+                          <p>От 5 дней</p>
+                        </div>
+                        <div class="button-price"><p>Подробнее</p></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-tarif over" style="transform: scale(0.8)">
+                    <div class="slide-text_container">
+                      <div class="slide-tarif_title">
+                        Сайт “Интернет магизин”
+                      </div>
+                      <div class="slide-tarif_subtitle">
+                        Сайт-визитка - компактный веб-ресурс – отличный старт
+                        бизнеса в интернете. Сайт-визитка содержит несколько
+                        страниц, в том числе – информацию о компании, её товарах
+                        и услугах, прейскурант цен, контакты и координаты для
+                        связи.
+                      </div>
+                      <div class="slide-tarif_price">
+                        <div class="tarif-price">
+                          <p>От 75.000₽</p>
+                          <p>От 30 дней</p>
+                        </div>
+                        <div class="button-price"><p>Подробнее</p></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-tarif over" style="transform: scale(0.8)">
+                    <div class="slide-text_container">
+                      <div class="slide-tarif_title">Сайт “Landing page”</div>
+                      <div class="slide-tarif_subtitle">
+                        Одностраничный сайт (Landing Page) – так называют
+                        промо-сайты для презентации товара, услуги и организации
+                        мгновенных продаж. Мы умеем создавать веб-ресурсы,
+                        полностью готовые к наплыву лавины посетителей.
+                        Одна-единственная страница принесёт колоссальную
+                        прибыль: иначе и быть не может.
+                      </div>
+                      <div class="slide-tarif_price">
+                        <div class="tarif-price">
+                          <p>От 25.000₽</p>
+                          <p>От 17 дней</p>
+                        </div>
+                        <div class="button-price"><p>Подробнее</p></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-tarif over" style="transform: scale(0.8)">
+                    <div class="slide-text_container">
+                      <div class="slide-tarif_title">Сайт “Корп.сайт”</div>
+                      <div class="slide-tarif_subtitle">
+                        Корпоративный сайт – это крупномасштабный портал,
+                        который создается не только для контакта организации с
+                        клиентами, но и для обмена информацией, мнениями, идеями
+                        между сотрудниками и руководством. Электронный ресурс
+                        такого типа – лицо компании, солидный «костюм»,
+                        вызывающий у партнёров и контрагентов уважение и
+                        интерес.
+                      </div>
+                      <div class="slide-tarif_price">
+                        <div class="tarif-price">
+                          <p>От 60.000₽</p>
+                          <p>От 17 дней</p>
+                        </div>
+                        <div class="button-price"><p>Подробнее</p></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-tarif over" style="transform: scale(0.8)">
+                    <div class="slide-text_container">
+                      <div class="slide-tarif_title">Сайт “Индивидуальный”</div>
+                      <div class="slide-tarif_subtitle">
+                        Мы готовы выслушать вашу идею, и выполнить задание. Цена
+                        проекта будет складываться от ее технического задания и
+                        сроков выполнения.
+                      </div>
+                      <div class="slide-tarif_price">
+                        <div class="tarif-price">
+                          <p>От ?₽</p>
+                          <p>От ? дней</p>
+                        </div>
+                        <div class="button-price"><p>Подробнее</p></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="slide-tarif over slide-tarif_img"
+                    style="transform: scale(0.8)"
+                  >
+                    <img src="./img/websiteicon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="arrow arrow-tarif">
+                <div class="prev-container" id="prev-tarif">
+                  <div class="prev">
+                    <img src="./img/arrowperv.svg" alt="" />
+                  </div>
+                </div>
+                <div class="next-container" id="next-tarif">
+                  <div class="next">
+                    <img src="./img/arrownext.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="forma" id="forma">
+        <div class="container forma-container">
+          <div class="forma-block">
+            <div class="forma-text">
+              <p>Оставь заявку</p>
+            </div>
+            <form
+              action="https://formsubmit.co/priz8090@gmail.com"
+              method="POST"
+              class="forma_"
+            >
+              <div class="description description_block">
+                <label for="fio">Ваше ФИО</label>
+                <input
+                  class="field"
+                  type="text"
+                  name="fio"
+                  placeholder="ФИО"
+                  id="fio"
+                  required
+                />
+              </div>
+              <div class="description description_block">
+                <label for="phone">Ваш номер телефона</label>
+                <input
+                  class="field"
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="Телефон"
+                  autocomplete="on"
+                />
+              </div>
+              <div class="description description_block">
+                <label for="sum">Бюджет на сайт</label>
+                <input
+                  class="field"
+                  type="number"
+                  name="summ"
+                  id="sum"
+                  placeholder="Бюджет"
+                />
+              </div>
+              <div class="description description_block">
+                <label for="email">Ваш E-MAIL адрес</label>
+                <input
+                  class="field"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="E-mail"
+                  required
+                  autocomplete="on"
+                />
+              </div>
+              <div class="description description_block">
+                <label for="description">Ваш комментарий (по желанию)</label>
+                <input
+                  class="field"
+                  type="text"
+                  name="description"
+                  id="description"
+                  placeholder="Комментарий"
+                />
+              </div>
+              <input
+                type="hidden"
+                name="_subject"
+                value="Новое сообщение с сайта StudioWeb!"
+              />
+              <div class="button-forma_container">
+                <button type="submit" class="button-forma">
+                  <p>Отправить</p>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="notification">
+            <div class="notification-image">
+              <img src="./img/Ellipse 4.svg" alt="" />
+              <div class="notification-image_phone">
+                <img src="./img/Group4.svg" alt="" />
+              </div>
+            </div>
+            <div class="notification-text">
+              <p class="notification-text_title">Уведомление!</p>
+              <p class="notification-text_subtitle">
+                В скорейшем времени вам перезвонят
+              </p>
+            </div>
+          </div>
+          <div class="phone-container">
+            <div class="phone-block">
+              <div class="phone-image"></div>
+            </div>
+          </div>
+
+          <div class="notification-end">
+            <div class="notification-image_end">
+              <img src="./img/Ellipse 5.svg" alt="" />
+              <div class="notification-image_ball">
+                <img src="./img/Group5.svg" alt="" />
+              </div>
+            </div>
+            <div class="notification-text_end">
+              <p class="notification-text_title_end">Работа закончена!</p>
+              <p class="notification-text_subtitle_end">
+                Мы закончили работу над вашим сайтом
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="container contact-container">
+          <div class="contact-block">
+            <div class="star-small star-right_up"></div>
+
+            <div class="contact-text">
+              <div class="star star-left_up"></div>
+              <p>Контакты</p>
+              <div class="phone-container_m">
+                <div class="phone-block">
+                  <div class="phone-image"></div>
+                </div>
+              </div>
+              <div class="star star-right"></div>
+            </div>
+
+            <div class="star-small star-left"></div>
+          </div>
+        </div>
+      </section>
+    </main>
     <div class="contact-ball_container">
       <div class="contact-ball_block">
         <div class="contact-ball contact-ball_s draggable" id="contactball-s">
