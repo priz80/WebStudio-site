@@ -107,7 +107,6 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  /* flex-basis: 40%; */
   margin-left: 340px;
   gap: 36px;
 }
@@ -128,7 +127,6 @@
 
 .header-text {
   margin: 0;
-  /* min-width: 808px; */
 }
 
 .h1-blur {
