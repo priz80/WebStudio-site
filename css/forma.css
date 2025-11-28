@@ -79,6 +79,7 @@ label {
 }
 
 .button-forma_container {
+  margin: 0;
   width: 437px;
   height: 52px;
   margin-top: 27px;
