@@ -5,22 +5,18 @@
 }
 
 .about-text {
-  /* width: 832px; */
   margin: 0;
 }
 
 .about-block {
   display: flex;
-  /* justify-content: space-between; */
   margin-bottom: 32px;
   gap: 35px;
-  /* margin-top: 32px; */
 }
 
 .about-container {
   min-height: 984px;
   margin-top: 84px;
-  /*   margin-bottom: 150px; */
 }
 
 .h3-about {
@@ -33,11 +29,8 @@
 }
 
 .button-about_block {
-  /*   width: 200px;
-  height: 57px; */
   margin: 0;
   margin-top: 44px;
-  /*   flex-shrink: 0; */
 }
 
 .button-about {
@@ -60,11 +53,7 @@
 }
 
 .button-about p {
-  /* color: #fff; */
-  /* font-family: Ruberoid; */
   font-size: 19px;
-  /* font-style: normal; */
-  /* font-weight: 400; */
   line-height: normal;
 }
 
