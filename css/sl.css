@@ -15,7 +15,7 @@
   box-sizing: border-box;
 }
 
-.nav-button {
+/* .nav-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -24,11 +24,11 @@
   border: none;
   padding: 10px;
   cursor: pointer;
-} 
+}  */
 
-.prev {
+/* .prev {
   left: 10px;
 }
 .next {
   right: 10px;
-}
+} */
