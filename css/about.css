@@ -30,6 +30,10 @@
   content: "Пока конкуренты говорят о том, что они лучшие - мы это доказываем делом.";
 } */
 
+.about-descriptions::after {
+    content: "Вы можете ознакомиться с информацией о нас и посмотреть наше портфолио";
+  }
+
 .button-about_block {
   margin: 0;
   margin-top: 44px;
@@ -166,20 +170,20 @@
 
   .h3-about {
     text-align: center;
-    font-size: 29px;
+    font-size: 28px;
   }
 
-/*   .about-descriptions {
+  .about-descriptions {
     text-align: center;
   }
 
-  .about-descriptions::after {
+  /* .about-descriptions::after {
     content: "Вы можете ознакомиться с информацией о нас и посмотреть наше портфолио";
   } */
 
-/*   .about-description {
+  .about-description {
     display: none;
-  } */
+  }
 
   .button-about_block {
     width: 139px;
