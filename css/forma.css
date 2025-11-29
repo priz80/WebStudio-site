@@ -203,7 +203,15 @@ label {
 
   }
 
+.notification-up {
+    top: 250px;
+    left: 0;
+}
 
+.notification-down {
+    top: 342px;
+    right: 0;
+}
 
   .forma-text p {
     text-align: center;
@@ -213,6 +221,10 @@ label {
   .forma {
     height: 667px;
     margin-bottom: 459px;
+  }
+
+  .forma-block {
+    min-width: 324px;
   }
 
   .forma_ {
