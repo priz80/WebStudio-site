@@ -123,7 +123,7 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -28px;
+  margin-top: -29px;
 }
 
 .phone-image {
@@ -146,6 +146,7 @@ label {
   display: flex;
   align-items: center;
   margin: 0;
+
 }
 
 .notification-up {
@@ -186,12 +187,14 @@ label {
   margin-top: 6px;
 }
 
+
 @media (max-width: 1440px) {
   .forma-container {
     flex-direction: column;
     justify-content: center;
   }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   .phone-container {
     display: flex;
@@ -211,11 +214,21 @@ label {
   margin-top: 156px;
 }
 
+=======
+.phone-block {
+  background-image: url(../img/iPhone-m.png);
+  margin-top: 156px;
+}
+
+>>>>>>> parent of 9b17a87 (Update forma.css)
 /* .phone-image {
   background-image: url(../img/Mockup-m.png);
   margin-top: 12px;
 } */
+<<<<<<< HEAD
 >>>>>>> parent of 3b4408c (Update forma.css)
+=======
+>>>>>>> parent of 9b17a87 (Update forma.css)
 
   .forma-text p {
     text-align: center;
