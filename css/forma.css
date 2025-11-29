@@ -201,7 +201,7 @@ label {
 }
 
 .image-ball {
-    width: 31px;
+  width: 31px;
   height: 31px;
   background-image: url(../img/Group5.svg);
   background-repeat: no-repeat;
@@ -212,7 +212,6 @@ label {
   .forma-container {
     flex-direction: column;
     justify-content: center;
-    max-width: 334px;
   }
 
   .phone-container {
@@ -269,30 +268,30 @@ label {
   }
 
   .notification-up {
-    top: 250px;
-    left: 0px;
+    top: 277px;
+    left: -12px;
   }
-  
+
   .notification-down {
-    top: 500px;
-    right: 0px;
+    top: 408px;
+    right: -14px;
   }
 
-.notification-icon_block {
-  min-width: 39px;
-  height: 36px;
-}
+  .notification-icon_block {
+    min-width: 39px;
+    height: 36px;
+  }
 
-.image-phone {
+  .image-phone {
     width: 22px;
     height: 21px;
-}
+  }
 
-.image-ball {
+  .image-ball {
     width: 29px;
     height: 29px;
     left: 13px;
-}
+  }
 
   .notification-text_title {
     font-size: 10px;
