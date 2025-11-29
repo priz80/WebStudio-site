@@ -250,7 +250,7 @@
 }
 
 @media (max-width: 1440px) {
-  .header-container {
+  .header {
     min-height: 640px;
   }
 
