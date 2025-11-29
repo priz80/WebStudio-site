@@ -21,7 +21,7 @@
 .portfolio-text {
   margin: 0;
 }
-.portfolio-text h4::after{
+.portfolio-text h4::after {
   content: "Наше портфолио";
 }
 
@@ -52,6 +52,10 @@
 }
 
 @media (max-width: 1280px) {
+  .portfolio {
+    min-height: 642px;
+  }
+
   .portfolio-block {
     flex-direction: column;
   }
@@ -76,7 +80,7 @@
     gap: 42px;
   }
 
-  .portfolio-text h4::after{
-  content: "Портфолио";
-}
+  .portfolio-text h4::after {
+    content: "Портфолио";
+  }
 }
