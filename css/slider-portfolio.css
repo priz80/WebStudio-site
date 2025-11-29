@@ -36,6 +36,7 @@
   .arrow-portfolio {
     position: relative;
     gap: 35px;
+    top: -9px;
   }
 
   .slide-portfolio {
