@@ -92,19 +92,10 @@
 }
 
 @media (max-width: 1280px) {
-
-
   .arrow-tarif {
     position: relative;
     margin-top: 43px;
     gap: 35px;
     justify-content: center;
   }
-
- /*  .slide-tarif {
-    width: 274px;
-    height: 374px;
-  } */
-
-
 }
