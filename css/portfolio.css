@@ -51,7 +51,7 @@
   line-height: normal;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1280px) {
   .portfolio-block {
     flex-direction: column;
   }
