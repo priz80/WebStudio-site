@@ -29,13 +29,6 @@ button {
   max-width: 1274px;
 }
 
-@media (max-width: 1280px) {
-  .container {
-    /* width: 98%; */
-    max-width: 360px;
-  }
-}
-
 
 li {
   margin: 0;
