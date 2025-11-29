@@ -2,10 +2,11 @@
   background-image: url(../img/room.svg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  overflow: hidden;
+  /* overflow: hidden; */
   min-height: 1055px;
   position: relative;
 }
+
 
 .line {
   width: 100%;
