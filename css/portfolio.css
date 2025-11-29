@@ -53,7 +53,11 @@
 
 @media (max-width: 1280px) {
   .portfolio {
-    min-height: 642px;
+    min-height: 560px;
+  }
+
+  .portfolio-container {
+    margin-top: 96px;
   }
 
   .portfolio-block {
@@ -67,8 +71,8 @@
   .portfolio-description {
     width: 100%;
     padding: 0 28px;
-    margin-top: 23px;
-    margin-bottom: 44px;
+    margin-top: 12px;
+    margin-bottom: 1px;
     font-size: 11px;
   }
 
