@@ -212,6 +212,7 @@ label {
   .forma-container {
     flex-direction: column;
     justify-content: center;
+    max-width: 334px;
   }
 
   .phone-container {
@@ -273,7 +274,7 @@ label {
   }
   
   .notification-down {
-    top: 350px;
+    top: 500px;
     right: 0px;
   }
 
