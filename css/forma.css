@@ -271,7 +271,7 @@ label {
 
   .notification-icon_block {
     min-width: 39px;
-    height: 36px;
+    height: 39px;
   }
 
   .image-phone {
@@ -282,7 +282,6 @@ label {
   .image-ball {
     width: 29px;
     height: 29px;
-    left: 13px;
   }
 
   .notification-text_title {
