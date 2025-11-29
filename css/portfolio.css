@@ -21,6 +21,9 @@
 .portfolio-text {
   margin: 0;
 }
+.portfolio-text h4::after{
+  content: "Наше портфолио";
+}
 
 .portfolio-description {
   width: 526px;
@@ -72,4 +75,8 @@
   .portfolio-block {
     gap: 42px;
   }
+
+  .portfolio-text h4::after{
+  content: "Портфолио";
+}
 }
