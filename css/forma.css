@@ -146,7 +146,6 @@ label {
   display: flex;
   align-items: center;
   margin: 0;
-
 }
 
 .notification-up {
@@ -158,8 +157,8 @@ label {
   right: -138px;
 }
 
-.notification-image {
-  width: 43px;
+.notification-icon_block {
+  min-width: 43px;
   height: 43px;
   margin: 9px;
   display: flex;
@@ -167,9 +166,28 @@ label {
   justify-content: center;
 }
 
-.notification-image_phone {
+.icon-up {
+  background-image: url(../img/Ellipse\ 4.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-down {
+  background-image: url(../img/Ellipse\ 5.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.notification-image {
   position: absolute;
-  margin-top: 6px;
+}
+
+.image-phone {
+  width: 25px;
+  height: 24px;
+  background-image: url(../img/Group4.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .notification-text_title {
@@ -182,11 +200,13 @@ label {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.notification-image_ball {
-  position: absolute;
-  margin-top: 6px;
+.image-ball {
+    width: 31px;
+  height: 31px;
+  background-image: url(../img/Group5.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-
 
 @media (max-width: 1440px) {
   .forma-container {
@@ -202,20 +222,21 @@ label {
   .phone-block {
     background-image: url(../img/iPhone-m.png);
     margin-top: 156px;
-
   }
 
-.phone-block {
-  background-image: url(../img/iPhone-m.png);
-  margin-top: 156px;
-}
+  .phone-block {
+    background-image: url(../img/iPhone-m.png);
+    margin-top: 156px;
+  }
 
+  .phone-block {
+    background-image: url(../img/iPhone-m.png);
+    margin-top: 166px;
+  }
 
-.phone-block {
-  background-image: url(../img/iPhone-m.png);
-  margin-top: 156px;
-}
-
+  .forma-text {
+    margin-top: 30px;
+  }
 
   .forma-text p {
     text-align: center;
@@ -239,5 +260,44 @@ label {
   .button-forma_container {
     margin-top: 0;
     width: 184px;
+  }
+
+  .notification {
+    max-width: 161px;
+    height: 45px;
+  }
+
+  .notification-up {
+    top: 250px;
+    left: 0px;
+  }
+  
+  .notification-down {
+    top: 350px;
+    right: 0px;
+  }
+
+.notification-icon_block {
+  min-width: 39px;
+  height: 36px;
+}
+
+.image-phone {
+    width: 22px;
+    height: 21px;
+}
+
+.image-ball {
+    width: 29px;
+    height: 29px;
+    left: 13px;
+}
+
+  .notification-text_title {
+    font-size: 10px;
+  }
+
+  .notification-text_subtitle {
+    font-size: 8px;
   }
 }
