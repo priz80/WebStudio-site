@@ -13,6 +13,10 @@ body {
   font-weight: 400;
 }
 
+main {
+  overflow: hidden;
+}
+
 p,
 a,
 button {
