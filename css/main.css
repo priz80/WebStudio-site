@@ -29,7 +29,7 @@ button {
   max-width: 1274px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1280px) {
   .container {
     /* width: 98%; */
     max-width: 360px;
@@ -49,7 +49,6 @@ li {
   font-style: normal;
   font-display: swap; /* Показываем fallback-шрифт, пока грузится основной */
 }
-
 
 
 
