@@ -98,4 +98,9 @@
     gap: 35px;
     justify-content: center;
   }
+
+  .slide-tarif {
+    width: 274px;
+    height: 374px;
+  }
 }
