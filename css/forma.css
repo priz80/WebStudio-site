@@ -194,6 +194,7 @@ label {
     justify-content: center;
   }
 
+<<<<<<< HEAD
 .phone-block {
   background-image: url(../img/iPhone-m.png);
   margin-top: 156px;
@@ -203,6 +204,28 @@ label {
   background-image: url(../img/Mockup-m.png);
   margin-top: 12px;
 } */
+=======
+  .phone-container {
+    display: flex;
+    display: flex;
+  }
+
+  .phone-block {
+    background-image: url(../img/iPhone-m.png);
+    margin-top: 156px;
+
+  }
+
+.notification-up {
+    top: 250px;
+    left: 0;
+}
+
+.notification-down {
+    top: 342px;
+    right: 0;
+}
+>>>>>>> parent of 9563cc9 (Revert "Update forma.css")
 
   .forma-text p {
     text-align: center;
@@ -212,6 +235,10 @@ label {
   .forma {
     height: 667px;
     margin-bottom: 459px;
+  }
+
+  .forma-block {
+    min-width: 324px;
   }
 
   .forma_ {
