@@ -1,6 +1,6 @@
 .tarif {
-    min-height: 984px;
-    position: relative;
+  min-height: 984px;
+  position: relative;
 }
 
 .tarif-container {
@@ -11,6 +11,8 @@
 .tarif-block {
   display: flex;
   flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .tarif-text {
@@ -18,4 +20,3 @@
   display: flex;
   justify-content: center;
 }
-
