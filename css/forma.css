@@ -292,4 +292,8 @@ label {
   .notification-text_subtitle {
     font-size: 8px;
   }
+
+  .notification-text {
+    max-width: 112px;
+  }
 }
