@@ -208,7 +208,7 @@ label {
   background-size: contain;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1280px) {
   .forma-container {
     flex-direction: column;
     justify-content: center;
