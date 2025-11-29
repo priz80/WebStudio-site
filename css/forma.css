@@ -260,18 +260,19 @@ label {
   }
 
   .notification-up {
-    top: 277px;
+    top: 287px;
     left: -12px;
   }
 
   .notification-down {
-    top: 408px;
+    top: 413px;
     right: -14px;
   }
 
   .notification-icon_block {
     min-width: 39px;
     height: 39px;
+    margin: 4px;
   }
 
   .image-phone {
