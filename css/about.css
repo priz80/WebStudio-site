@@ -149,6 +149,12 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .about-block {
+    gap: 7px;
+}
+}
+
 @media (max-width: 1280px) {
   .about {
     background-image: none;
@@ -178,10 +184,6 @@
   .about-descriptions {
     text-align: center;
   }
-
-  /* .about-descriptions::after {
-    content: "Вы можете ознакомиться с информацией о нас и посмотреть наше портфолио";
-  } */
 
   .about-description {
     display: none;
