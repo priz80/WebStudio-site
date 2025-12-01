@@ -33,8 +33,8 @@
 } */
 
 .about-descriptions::after {
-    content: "Вы можете ознакомиться с информацией о нас и посмотреть наше портфолио";
-  }
+  content: "Вы можете ознакомиться с информацией о нас и посмотреть наше портфолио";
+}
 
 .button-about_block {
   margin: 0;
@@ -49,6 +49,8 @@
   background: #161617;
   box-shadow: 0 0 38px 0 rgba(46, 236, 197, 0.2);
   cursor: pointer;
+  font-size: 19px;
+  line-height: normal;
 }
 
 .button-about_shadow {
@@ -152,7 +154,7 @@
 @media (max-width: 1440px) {
   .about-block {
     gap: 7px;
-}
+  }
 }
 
 @media (max-width: 1280px) {
@@ -196,18 +198,15 @@
   }
 
   .button-about p {
-
     font-size: 13px;
-
   }
 
   .button-about {
-
     width: 131px;
     height: 41px;
   }
 
-  .button-about_shadow { 
+  .button-about_shadow {
     width: 129px;
     height: 41px;
     margin-top: -32px;
