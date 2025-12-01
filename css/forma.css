@@ -212,10 +212,10 @@ label {
   .forma-container {
     flex-direction: column;
     justify-content: center;
+    max-width: 360px;
   }
 
   .phone-container {
-    display: flex;
     display: flex;
   }
 
