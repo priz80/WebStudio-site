@@ -58,7 +58,7 @@
 }
 
 @media (max-width: 1280px) {
-  .contact-text p {
+  .contact-block {
     display: none;
   }
 }
