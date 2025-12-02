@@ -1,7 +1,7 @@
 .about {
-  background-image: url(../img/Grouplineup.svg);
+/*   background-image: url(../img/Grouplineup.svg);
   background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   min-height: 1062px;
   position: relative;
 }
