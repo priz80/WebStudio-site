@@ -228,7 +228,6 @@
   width: 663px;
   height: 844px;
   top: -115px;
-  /* left: 46px; */
   right: -190px;
   z-index: 1;
   background-image: url(../img/man.svg);
@@ -240,7 +239,6 @@
   position: absolute;
   width: 700px;
   height: 700px;
-  /* left: 119px; */
   top: 8px;
   right: -300px;
 
