@@ -29,19 +29,51 @@ button {
   max-width: 1274px;
 }
 
-
 li {
   margin: 0;
   list-style: none;
 }
 
 @font-face {
-  font-family: 'Ruberoid';
-  src: url('../font/Ruberoid-Regular.woff2') format('woff2');
+  font-family: "Ruberoid";
+  src: url("../font/Ruberoid-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap; /* Показываем fallback-шрифт, пока грузится основной */
 }
 
+@media (min-width: 1280px) {
+  .wave {
+    position: absolute;
+    top: 770px;
+    width: 100%;
+    height: 1354px;
+    background-image: url(../img/wave.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
 
+  .swave {
+    position: absolute;
+    top: 1541px;
+    width: 100%;
+    height: 2099px;
+    background-image: url(../img/swave.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 1280px) {
+  .swave {
+    position: absolute;
+    top: 2270px;
+    width: 100%;
+    height: 731px;
+    background-image: url(../img/swave-m.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
 
