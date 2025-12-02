@@ -15,7 +15,6 @@
   position: relative;
   display: flex;
   gap: 148px;
-  /* flex-shrink: 0; */
 }
 
 .portfolio-text {
