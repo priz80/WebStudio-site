@@ -295,4 +295,47 @@ label {
   .notification-text {
     max-width: 112px;
   }
+
+  .star-s {
+    position: absolute;
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/starsmall.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 50%;
+  }
+
+  .star-m {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/star.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .star-s_left {
+    top: 461px;
+    left: -4px;
+    opacity: 0.7;
+  }
+
+  .star-s_right {
+    top: 123px;
+    right: 69px;
+    opacity: 0.5;
+  }
+
+  .star-m_right {
+    top: 143px;
+    right: 18px;
+  }
+
+  .stars-s_right {
+    top: 602px;
+    right: -3px;
+    opacity: 0.3;
+  }
 }
