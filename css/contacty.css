@@ -63,24 +63,3 @@
   }
 }
 
-/* @media (max-width: 1280px) {
-  .phone-container_m {
-    display: contents;
-  }
-.phone-block {
-    width: 254px;
-    height: 454px;
-    background-image: url(../img/Blue-m.png);
-    margin-top: 0;
-  }
-  .phone-image {
-    width: 226px;
-    height: 480px;
-    background-image: url(../img/Mockup-m.png);
-    margin-top: 52px;
-  }
-
-  .star-left {
-    display: none;
-  }
-} */
