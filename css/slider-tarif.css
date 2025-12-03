@@ -46,17 +46,17 @@
 
 .slide-text_container {
   height: 500px;
-  margin: 30px 30px 0 30px;
+  margin: 40px 21px 0 21px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .slide-tarif_title {
   font-weight: 400;
   font-size: 32px;
   text-align: center;
   color: #fff;
-  margin-bottom: 13px;
+  margin-bottom: 48px;
 }
 .slide-tarif_subtitle {
   font-weight: 500;
@@ -64,9 +64,12 @@
   line-height: 154%;
   text-align: center;
   color: rgba(255, 255, 255, 0.75);
+  width: 310px;
+  margin-bottom: 66px;
 }
 
 .slide-tarif_price {
+  margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
