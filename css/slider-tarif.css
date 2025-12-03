@@ -5,7 +5,7 @@
 
 .slider-tarif {
   position: relative;
-  width: 1110px;
+  width: 1084px;
   overflow: hidden;
   margin: 0;
 }
@@ -40,7 +40,7 @@
 
 .arrow-tarif {
   position: absolute;
-  top: 42%;
+  top: 44%;
   gap: 968px;
 }
 
