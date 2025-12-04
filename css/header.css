@@ -266,7 +266,7 @@
     margin-bottom: 123px;
   }
 
-  .button {
+  .button-menu {
     display: none;
   }
 
@@ -372,7 +372,7 @@
     right: -167px;
   }
 
-  .details {
+  .button {
     width: 129px;
     height: 38px;
   }
@@ -385,7 +385,7 @@
     font-size: 11px;
   }
 
-  .details img {
+  .button img {
     margin: 0;
     width: 7px;
     height: 12px;
