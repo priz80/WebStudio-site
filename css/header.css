@@ -70,7 +70,7 @@
   content: "web";
 }
 
-.button {
+.button-menu {
   width: 183px;
   height: 57px;
   margin: 0;
@@ -181,7 +181,7 @@
   margin: 0;
 }
 
-.details {
+.button {
   margin: 0;
   width: 200px;
   height: 57px;
