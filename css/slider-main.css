@@ -1,0 +1,16 @@
+.slider-sl {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slides-sl {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+.slide-sl {
+  min-width: 100%;
+  box-sizing: border-box;
+}
