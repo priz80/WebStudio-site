@@ -12,7 +12,6 @@ const totalSlideslengh = slidestarif.length;
 // Индекс текущего слайда
 let ex = 0;
 slidestarif[ex].style.transform = `scale(0.8)`;
-/* slidestarif[ex].classList.add('over'); */
 slidestarif[ex+1].style.transform = `scale(1)`;
 slidestarif[ex+1].classList.remove('over');
 
