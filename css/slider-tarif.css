@@ -87,7 +87,7 @@
   color: rgba(255, 255, 255, 0.4);
 }
 
-.details-tarif {
+.button-tarif {
   width: 172px;
 }
 
@@ -99,18 +99,6 @@
   width: 134px;
   margin-left: 16px;
 }
-
-/* .button-price {
-  border: 1.5px solid #2eecc5;
-  border-radius: 41px;
-  width: 172px;
-  height: 57px;
-  box-shadow: 0 0 38px 0 rgba(46, 236, 197, 0.1);
-  background: rgba(46, 236, 197, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 @media (max-width: 1280px) {
   .arrow-tarif {
