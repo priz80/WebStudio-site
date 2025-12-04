@@ -49,14 +49,14 @@
   margin: 40px 21px 0 21px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
 .slide-tarif_title {
   font-weight: 400;
   font-size: 32px;
   text-align: center;
   color: #fff;
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
 }
 .slide-tarif_subtitle {
   font-weight: 500;
@@ -64,8 +64,8 @@
   line-height: 154%;
   text-align: center;
   color: rgba(255, 255, 255, 0.75);
-  width: 310px;
-  margin-bottom: 66px;
+  /* width: 310px; */
+  /* margin-bottom: 66px; */
 }
 
 .slide-tarif_price {
@@ -82,7 +82,25 @@
   color: #fff;
 }
 
-.button-price {
+.tarif-price p:nth-child(2) {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.details-tarif {
+  width: 172px;
+}
+
+.button-description_tarif {
+  font-size: 17px;
+}
+
+.button-text_tarif {
+  width: 134px;
+  margin-left: 16px;
+}
+
+/* .button-price {
   border: 1.5px solid #2eecc5;
   border-radius: 41px;
   width: 172px;
@@ -92,7 +110,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 @media (max-width: 1280px) {
   .arrow-tarif {
