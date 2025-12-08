@@ -56,7 +56,6 @@
   font-size: 32px;
   text-align: center;
   color: #fff;
-  /* margin-bottom: 48px; */
 }
 .slide-tarif_subtitle {
   font-weight: 500;
@@ -64,8 +63,6 @@
   line-height: 154%;
   text-align: center;
   color: rgba(255, 255, 255, 0.75);
-  /* width: 310px; */
-  /* margin-bottom: 66px; */
 }
 
 .slide-tarif_price {
