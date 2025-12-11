@@ -109,10 +109,43 @@
   }
 
   .slider-tarif {
-    width: 880px;
+    width: 876px;
   }
 
   .slides-tarif {
 gap: 27px;
   }
+
+  .slide-tarif_title {
+    font-size: 25px;
+  }
+
+  .slide-tarif_subtitle {
+    font-size: 12px;
+  }
+
+  .slide-text_container {
+    height: 325px;
+    margin: 27px 21px 0 21px;
+  }
+
+  .tarif-price {
+    font-size: 16px;
+  }
+
+  .tarif-price p:nth-child(2) {
+    font-size: 13px;
+  }
+
+  .button-tarif {
+    width: 126px;
+}
+
+.button-description_tarif {
+    font-size: 12px;
+}
+
+.slide-tarif img {
+  transform: scale(0.7);
+}
 }
