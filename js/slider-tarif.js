@@ -4,8 +4,8 @@ const tarifSlides = document.querySelectorAll(".slide-tarif");
 const tarifPrevBtn = document.getElementById("prev-tarif");
 const tarifNextBtn = document.getElementById("next-tarif");
 
-// Константы
-const tarifSlideWidth = 370;
+// Переменная ширины слайда (зависит от viewport)
+let tarifSlideWidth = window.innerWidth >= 1280 ? 370 : 300;
 const tarifGap = 0;
 const tarifTotalSlides = tarifSlides.length;
 
@@ -17,13 +17,18 @@ if (tarifTotalSlides < 2) {
   console.warn("Слайдер тарифов: недостаточно слайдов");
 }
 
-// Функция обновления стилей слайдов
+// Функция обновления стилей слайдов (scale и классы)
 function tarifUpdateSlideStyles() {
   tarifSlides.forEach((slide) => {
-    slide.style.transform = "scale(0.8)";
     slide.classList.add("over");
+    if (window.innerWidth >= 1280) {
+      slide.style.transform = "scale(0.8)";
+    } else {
+      slide.style.transform = "scale(1)";
+    }
   });
 
+  // Активный слайд (средний — следующий после текущего)
   const activeIndex = tarifCurrentIndex + 1;
   if (tarifSlides[activeIndex]) {
     tarifSlides[activeIndex].style.transform = "scale(1)";
@@ -31,39 +36,52 @@ function tarifUpdateSlideStyles() {
   }
 }
 
-// Обновление позиции обёртки
+// Обновление позиции обёртки (сдвиг)
 function tarifUpdateSliderPosition() {
   const offset = -tarifCurrentIndex * (tarifSlideWidth + tarifGap);
   tarifWrapper.style.transform = `translateX(${offset}px)`;
 }
 
-// Инициализация
+// Обработчик изменения размера окна
+function handleResize() {
+  const newWidth = window.innerWidth >= 1280 ? 370 : 300;
+
+  if (newWidth !== tarifSlideWidth) {
+    tarifSlideWidth = newWidth;
+    tarifUpdateSlideStyles();
+    tarifUpdateSliderPosition();
+  }
+}
+
+// Инициализация при загрузке
 tarifUpdateSlideStyles();
 tarifUpdateSliderPosition();
 
-// Обработчик "Назад"
+// Обработчик кнопки "Назад"
 tarifPrevBtn?.addEventListener("click", () => {
   if (tarifTotalSlides < 2) return;
 
   if (tarifCurrentIndex > 0) {
     tarifCurrentIndex--;
   } else {
-    tarifCurrentIndex = 5; // Зацикливание: активный слайд — 6-й (индекс 5)
+    tarifCurrentIndex = 5; // Зацикливание к последнему состоянию (6 слайдов)
   }
   tarifUpdateSlideStyles();
   tarifUpdateSliderPosition();
 });
 
-
-// Обработчик "Вперёд"
+// Обработчик кнопки "Вперёд"
 tarifNextBtn?.addEventListener("click", () => {
   if (tarifTotalSlides < 2) return;
 
   if (tarifCurrentIndex < tarifTotalSlides - 3) {
     tarifCurrentIndex++;
   } else {
-    tarifCurrentIndex = 0; // Зацикливание: возврат в начало
+    tarifCurrentIndex = 0; // Зацикливание в начало
   }
   tarifUpdateSlideStyles();
   tarifUpdateSliderPosition();
 });
+
+// Отслеживание изменения размера окна
+window.addEventListener("resize", handleResize);
