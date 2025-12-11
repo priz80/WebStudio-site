@@ -19,7 +19,7 @@
 .slide-tarif {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 32px;
-  min-width: 370px;
+  max-width: 370px;
   height: 570px;
   background: linear-gradient(155deg, #313134 0%, #292929 51.31%, #282828 100%);
   flex: 0 0 370px;
@@ -104,11 +104,15 @@
   }
 
   .slide-tarif {
-    min-width: 274px;
+    max-width: 274px;
     height: 374px;
   }
 
   .slider-tarif {
-    width: 822px;
+    width: 880px;
+  }
+
+  .slides-tarif {
+gap: 27px;
   }
 }
