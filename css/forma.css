@@ -113,6 +113,11 @@ label {
   margin: 0;
 }
 
+@media (max-width: 1560px) {
+.phone-container {
+  display: none;
+}
+}
 .phone-block {
   width: 269px;
   height: 528px;
