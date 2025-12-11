@@ -48,17 +48,18 @@ tarifPrevBtn?.addEventListener("click", () => {
   if (tarifCurrentIndex > 0) {
     tarifCurrentIndex--;
   } else {
-    tarifCurrentIndex = tarifTotalSlides - 2; // Зацикливание: переход к предпоследнему слайду
+    tarifCurrentIndex = 5; // Зацикливание: активный слайд — 6-й (индекс 5)
   }
   tarifUpdateSlideStyles();
   tarifUpdateSliderPosition();
 });
 
+
 // Обработчик "Вперёд"
 tarifNextBtn?.addEventListener("click", () => {
   if (tarifTotalSlides < 2) return;
 
-  if (tarifCurrentIndex < tarifTotalSlides - 2) {
+  if (tarifCurrentIndex < tarifTotalSlides - 3) {
     tarifCurrentIndex++;
   } else {
     tarifCurrentIndex = 0; // Зацикливание: возврат в начало
