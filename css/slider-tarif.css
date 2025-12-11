@@ -27,11 +27,6 @@
 }
 
 .over {
-  /* mask-image: url("../img/over.svg");
-  mask-position: center;
-  mask-size: 100%;
-  mask-repeat: no-repeat;
-  pointer-events: none; */
   opacity: 0.5;
 }
 
