@@ -1,69 +1,65 @@
 // Получаем элементы
-const wrapper = document.querySelector(".slides-tarif");
-const slidestarif = document.querySelectorAll(".slide-tarif");
-const prev = document.getElementById("prev-tarif");
-const next = document.getElementById("next-tarif");
+const tarifWrapper = document.querySelector(".slides-tarif");
+const tarifSlides = document.querySelectorAll(".slide-tarif");
+const tarifPrevBtn = document.getElementById("prev-tarif");
+const tarifNextBtn = document.getElementById("next-tarif");
 
 // Константы
-const slideW = 370; // Ширина картинки
-const gapt = 0; // Расстояние между картинками
-const totalSlideslengh = slidestarif.length;
+const tarifSlideWidth = 370;
+const tarifGap = 0;
+const tarifTotalSlides = tarifSlides.length;
 
 // Индекс текущего слайда
-let ex = 0;
-slidestarif[ex].style.transform = `scale(0.8)`;
-slidestarif[ex+1].style.transform = `scale(1)`;
-slidestarif[ex+1].classList.remove('over');
+let tarifCurrentIndex = 0;
 
-// Функция обновления позиции
-function updateSliders() {
-  const offsets = -ex * (slideW + gapt);
-  wrapper.style.transform = `translateX(${offsets}px)`;
+// Проверка на количество слайдов
+if (tarifTotalSlides < 2) {
+  console.warn("Слайдер тарифов: недостаточно слайдов");
 }
 
-// Обработчики событий
-prev.addEventListener("click", () => {
-  if (ex < 7 && ex != 0) {
-    ex = (ex - 1 + totalSlideslengh) % totalSlideslengh;
+// Функция обновления стилей слайдов
+function tarifUpdateSlideStyles() {
+  tarifSlides.forEach(slide => {
+    slide.style.transform = "scale(0.8)";
+    slide.classList.add("over");
+    slide.style.transition = "transform 0.5s ease-in-out";
+  });
+
+  const activeIndex = tarifCurrentIndex + 1;
+  if (tarifSlides[activeIndex]) {
+    tarifSlides[activeIndex].style.transform = "scale(1)";
+    tarifSlides[activeIndex].classList.remove("over");
+  }
+}
+
+// Обновление позиции обёртки
+function tarifUpdateSliderPosition() {
+  const offset = -tarifCurrentIndex * (tarifSlideWidth + tarifGap);
+  tarifWrapper.style.transform = `translateX(${offset}px)`;
+}
+
+// Инициализация
+tarifUpdateSlideStyles();
+tarifUpdateSliderPosition();
+
+// Обработчик "Назад"
+tarifPrevBtn?.addEventListener("click", () => {
+  if (tarifCurrentIndex > 0) {
+    tarifCurrentIndex--;
   } else {
-    slidestarif[ex+1].style.transform = `scale(0.8)`;
-    slidestarif[ex+1].classList.add('over');
-    ex = 5;
+    tarifCurrentIndex = tarifTotalSlides - 2;
   }
-
-  if (ex < 6) {
-    slidestarif[ex + 2].style.transform = `scale(0.8)`;
-    slidestarif[ex+2].classList.add('over');
-    slidestarif[ex + 2].style.transition = "transform 0.5s ease-in-out";
-  }
-
-  if (ex < 7) {
-    slidestarif[ex+1].style.transform = `scale(1)`;
-    slidestarif[ex+1].classList.remove('over');
-    slidestarif[ex+1].style.transition = "transform 0.5s ease-in-out";
-  }
-
-  updateSliders();
+  tarifUpdateSlideStyles();
+  tarifUpdateSliderPosition();
 });
 
-next.addEventListener("click", () => {
-  if (ex < 5) {
-    slidestarif[ex+1].style.transform = `scale(0.8)`;
-    slidestarif[ex+1].classList.add('over');
-    ex = (ex + 1) % totalSlideslengh;
+// Обработчик "Вперёд"
+tarifNextBtn?.addEventListener("click", () => {
+  if (tarifCurrentIndex < tarifTotalSlides - 2) {
+    tarifCurrentIndex++;
   } else {
-    slidestarif[ex+1].style.transform = `scale(0.8)`;
-    slidestarif[ex+1].classList.add('over');
-    ex = 0;
+    tarifCurrentIndex = 0;
   }
-
-  if (ex < 7) {
-    slidestarif[ex+1].style.transform = `scale(1)`;
-    slidestarif[ex+1].classList.remove('over');
-    slidestarif[ex+1].style.transition = "transform 0.5s ease-in-out";
-  } else {
-    slidestarif[ex - 2].style.transform = `scale(0.8)`;
-    slidestarif[ex+1].classList.add('over');
-  }
-  updateSliders();
+  tarifUpdateSlideStyles();
+  tarifUpdateSliderPosition();
 });
