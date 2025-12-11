@@ -9,7 +9,7 @@ const tarifSlideWidth = 370;
 const tarifGap = 0;
 const tarifTotalSlides = tarifSlides.length;
 
-// Индекс текущего слайда
+// Индекс текущего левого слайда
 let tarifCurrentIndex = 0;
 
 // Проверка на количество слайдов
@@ -19,7 +19,7 @@ if (tarifTotalSlides < 2) {
 
 // Функция обновления стилей слайдов
 function tarifUpdateSlideStyles() {
-  tarifSlides.forEach(slide => {
+  tarifSlides.forEach((slide) => {
     slide.style.transform = "scale(0.8)";
     slide.classList.add("over");
   });
@@ -43,10 +43,12 @@ tarifUpdateSliderPosition();
 
 // Обработчик "Назад"
 tarifPrevBtn?.addEventListener("click", () => {
+  if (tarifTotalSlides < 2) return;
+
   if (tarifCurrentIndex > 0) {
     tarifCurrentIndex--;
   } else {
-    tarifCurrentIndex = tarifTotalSlides - 2; // Зацикливание в конец
+    tarifCurrentIndex = tarifTotalSlides - 2; // Зацикливание: переход к предпоследнему слайду
   }
   tarifUpdateSlideStyles();
   tarifUpdateSliderPosition();
@@ -54,13 +56,13 @@ tarifPrevBtn?.addEventListener("click", () => {
 
 // Обработчик "Вперёд"
 tarifNextBtn?.addEventListener("click", () => {
-  // Если текущий индекс указывает на предпоследний слайд (чтобы активен был последний)
-  if (tarifCurrentIndex === tarifTotalSlides - 3) {
-    tarifCurrentIndex = 0; // Возвращаемся в начало
-  } else if (tarifCurrentIndex < tarifTotalSlides - 2) {
+  if (tarifTotalSlides < 2) return;
+
+  if (tarifCurrentIndex < tarifTotalSlides - 2) {
     tarifCurrentIndex++;
+  } else {
+    tarifCurrentIndex = 0; // Зацикливание: возврат в начало
   }
-  // Если уже на последней "паре", не делаем ничего (или можно зациклить — зависит от желания)
   tarifUpdateSlideStyles();
   tarifUpdateSliderPosition();
 });
