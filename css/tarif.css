@@ -25,4 +25,8 @@
   .tarif {
     min-height: 754px;
 }
+
+.tarif-container {
+    margin-top: 44px;
+}
 }
