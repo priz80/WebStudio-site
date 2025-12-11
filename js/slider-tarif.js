@@ -22,7 +22,6 @@ function tarifUpdateSlideStyles() {
   tarifSlides.forEach(slide => {
     slide.style.transform = "scale(0.8)";
     slide.classList.add("over");
-    slide.style.transition = "transform 0.5s ease-in-out";
   });
 
   const activeIndex = tarifCurrentIndex + 1;
@@ -47,7 +46,7 @@ tarifPrevBtn?.addEventListener("click", () => {
   if (tarifCurrentIndex > 0) {
     tarifCurrentIndex--;
   } else {
-    tarifCurrentIndex = tarifTotalSlides - 2;
+    tarifCurrentIndex = tarifTotalSlides - 2; // Зацикливание в конец
   }
   tarifUpdateSlideStyles();
   tarifUpdateSliderPosition();
@@ -55,11 +54,13 @@ tarifPrevBtn?.addEventListener("click", () => {
 
 // Обработчик "Вперёд"
 tarifNextBtn?.addEventListener("click", () => {
-  if (tarifCurrentIndex < tarifTotalSlides - 2) {
+  // Если текущий индекс указывает на предпоследний слайд (чтобы активен был последний)
+  if (tarifCurrentIndex === tarifTotalSlides - 3) {
+    tarifCurrentIndex = 0; // Возвращаемся в начало
+  } else if (tarifCurrentIndex < tarifTotalSlides - 2) {
     tarifCurrentIndex++;
-  } else {
-    tarifCurrentIndex = 0;
   }
+  // Если уже на последней "паре", не делаем ничего (или можно зациклить — зависит от желания)
   tarifUpdateSlideStyles();
   tarifUpdateSliderPosition();
 });
