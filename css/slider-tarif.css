@@ -22,14 +22,17 @@
   min-width: 370px;
   height: 570px;
   background: linear-gradient(155deg, #313134 0%, #292929 51.31%, #282828 100%);
+  flex: 0 0 370px;
+  transition: transform 0.5s ease-in-out;
 }
 
 .over {
-  mask-image: url("../img/over.svg");
+  /* mask-image: url("../img/over.svg");
   mask-position: center;
   mask-size: 100%;
   mask-repeat: no-repeat;
-  pointer-events: none;
+  pointer-events: none; */
+  opacity: 0.5;
 }
 
 .slide-tarif_img {
