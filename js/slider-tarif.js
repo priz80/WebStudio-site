@@ -21,7 +21,7 @@ if (tarifTotalSlides < 2) {
 function tarifUpdateSlideStyles() {
   tarifSlides.forEach((slide) => {
     slide.classList.add("over");
-    if (window.innerWidth >= 1280) {
+    if (window.innerWidth >= 1281) {
       slide.style.transform = "scale(0.8)";
     } else {
       slide.style.transform = "scale(1)";
@@ -44,7 +44,7 @@ function tarifUpdateSliderPosition() {
 
 // Обработчик изменения размера окна
 function handleResize() {
-  const newWidth = window.innerWidth >= 1280 ? 370 : 300;
+  const newWidth = window.innerWidth >= 1281 ? 370 : 300;
 
   if (newWidth !== tarifSlideWidth) {
     tarifSlideWidth = newWidth;
