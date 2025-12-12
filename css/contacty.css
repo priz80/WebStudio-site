@@ -63,3 +63,11 @@
   }
 }
 
+.star, .star-small, .star-s, .star-m {
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 1; transform: scale(1) rotate(0); }
+  50% { opacity: 0.7; transform: scale(1.1) rotate(5deg); }
+}
