@@ -150,9 +150,6 @@
   transition: width 0.2s ease, height 0.2s ease;
 }
 
-.draggable:hover, a:hover {
-  cursor: url(../img/Pointer.svg), grabbing;
-}
 
 @media (max-width: 1280px) {
   .contact-ball_container {
