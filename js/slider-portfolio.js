@@ -1,48 +1,53 @@
-// Получаем элементы
-const slidesContainer = document.querySelector(".slides-portfolio");
-const slideslenght = document.querySelectorAll(".slide-portfolio");
-const prevBtn = document.getElementById("prev-portfolio");
-const nextBtn = document.getElementById("next-portfolio");
+// Получаем элементы с префиксом portfolio
+const portfolioSlidesContainer = document.querySelector(".slides-portfolio");
+const portfolioSlides = document.querySelectorAll(".slide-portfolio");
+const portfolioPrevBtn = document.getElementById("prev-portfolio");
+const portfolioNextBtn = document.getElementById("next-portfolio");
 
-// Индекс текущего слайда
-let currentInd = 0;
+// Состояние слайдера
+let portfolioCurrentIndex = 0;
+const portfolioTotalSlides = portfolioSlides.length;
 
-// Константы
-let slideWidth = 0; // Ширина картинки
-let gap = 0; // Расстояние между картинками
-const totalSlideslenght = slideslenght.length;
+// Параметры слайдера
+let portfolioSlideWidth = 0;
+let portfolioGap = 0;
 
-viewWidth();
-
-function viewWidth() {
+// Определяем размеры в зависимости от ширины экрана
+function portfolioUpdateDimensions() {
   if (window.innerWidth < 1285) {
-    slideWidth = 258;
-    gap = 37;
+    portfolioSlideWidth = 258;
+    portfolioGap = 37;
   } else {
-    slideWidth = 567;
-    gap = 102;
+    portfolioSlideWidth = 567;
+    portfolioGap = 102;
   }
 }
 
-window.addEventListener("resize", () => {
-  currentInd = 0;
-  viewWidth();
-  updateSlider();
-});
-
-// Функция обновления позиции
-function updateSlider() {
-  const offset = -currentInd * (slideWidth + gap);
-  slidesContainer.style.transform = `translateX(${offset}px)`;
+// Обновление позиции слайдера
+function portfolioUpdateSlider() {
+  const offset = -portfolioCurrentIndex * (portfolioSlideWidth + portfolioGap);
+  portfolioSlidesContainer.style.transform = `translateX(${offset}px)`;
 }
 
-// Обработчики событий
-prevBtn.addEventListener("click", () => {
-  currentInd = (currentInd - 1 + totalSlideslenght) % totalSlideslenght;
-  updateSlider();
+// Обработчик клика "назад"
+portfolioPrevBtn.addEventListener("click", () => {
+  portfolioCurrentIndex = (portfolioCurrentIndex - 1 + portfolioTotalSlides) % portfolioTotalSlides;
+  portfolioUpdateSlider();
 });
 
-nextBtn.addEventListener("click", () => {
-  currentInd = (currentInd + 1) % totalSlideslenght;
-  updateSlider();
+// Обработчик клика "вперёд"
+portfolioNextBtn.addEventListener("click", () => {
+  portfolioCurrentIndex = (portfolioCurrentIndex + 1) % portfolioTotalSlides;
+  portfolioUpdateSlider();
 });
+
+// Обработка изменения размера окна
+window.addEventListener("resize", () => {
+  portfolioUpdateDimensions();
+  portfolioCurrentIndex = 0; // Сбрасываем на первый слайд
+  portfolioUpdateSlider();
+});
+
+// Инициализация при загрузке
+portfolioUpdateDimensions();
+portfolioUpdateSlider();
