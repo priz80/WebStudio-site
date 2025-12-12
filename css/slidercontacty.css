@@ -82,6 +82,20 @@
   transition: width 0.2s ease, height 0.2s ease;
 }
 
+.group {
+  width: 50px;
+  height: 37px;
+  background-image: url(../img/ball/Group.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.group-hover {
+    width: 65px;
+    height: 48px;
+    transition: width 0.2s ease, height 0.2s ease;
+  }
+
 .max {
   width: 54px;
   height: 45px;
@@ -186,6 +200,17 @@
     background-image: url(../img/ball/Combined-m.svg);
   }
 
+  .group {
+    width: 25px;
+    height: 18px;
+    background-image: url(../img/ball/Group.svg);
+  }
+
+  .group-hover {
+    width: 32px;
+    height: 23px;
+  }
+
   .vk {
     width: 24px;
     height: 15px;
@@ -198,34 +223,34 @@
   }
 
   .mail {
-  width: 27px;
-  height: 24px;
-  background-image: url(../img/ball/gmail-m.svg);
-}
-.mail-hover {
-  width: 36px;
-  height: 33px;
-}
+    width: 27px;
+    height: 24px;
+    background-image: url(../img/ball/gmail-m.svg);
+  }
+  .mail-hover {
+    width: 36px;
+    height: 33px;
+  }
 
-.tg {
-  width: 20px;
-  height: 18px;
-  background-image: url(../img/ball/tg-m.svg);
-}
+  .tg {
+    width: 20px;
+    height: 18px;
+    background-image: url(../img/ball/tg-m.svg);
+  }
 
-.tg-hover {
-  width: 30px;
-  height: 28px;
-}
+  .tg-hover {
+    width: 30px;
+    height: 28px;
+  }
 
-.max {
-  width: 32px;
-  height: 23px;
-}
+  .max {
+    width: 32px;
+    height: 23px;
+  }
 
-.max-hover {
-  width: 41px;
-  height: 32px;
-  transition: width 0.2s ease, height 0.2s ease;
-}
+  .max-hover {
+    width: 41px;
+    height: 32px;
+    transition: width 0.2s ease, height 0.2s ease;
+  }
 }
