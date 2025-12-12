@@ -108,3 +108,27 @@
 .aside-number_light_01::after {
  content: '01';
 }
+
+.aside-number_dark_02::after {
+  content: '02';
+}
+
+.aside-number_dark_03::after {
+  content: '03';
+}
+
+.aside-number_dark_04::after {
+  content: '04';
+}
+
+.aside-number_dark_05::after {
+  content: '05';
+}
+
+.aside-number_light_02::after {
+  content: '02';
+}
+
+.aside-number_light_04::after {
+  content: '04';
+}
