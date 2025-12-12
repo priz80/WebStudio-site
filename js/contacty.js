@@ -13,11 +13,13 @@
     const mail = document.getElementById('mail');
     const vk = document.getElementById('vk');
     const max = document.getElementById('max');
+    const group = document.getElementById('group');
 
     // Обработчик наведения
     contactball_s.addEventListener('mouseover', () => {
         contactball_s.classList.add('contact-ball_hover');
-        ball_s.classList.add('ball-hover');        
+        ball_s.classList.add('ball-hover');
+        group.classList.add('group-hover');        
     });
 
     contactball_m.addEventListener('mouseover', () => {
@@ -48,6 +50,7 @@
     contactball_s.addEventListener('mouseout', () => {
         contactball_s.classList.remove('contact-ball_hover');
         ball_s.classList.remove('ball-hover');
+        group.classList.remove('group-hover');
     });
 
       contactball_m.addEventListener('mouseout', () => {
@@ -73,4 +76,6 @@
         ball_ss.classList.remove('ball-hover');
         mail.classList.remove('mail-hover');
     });
+
+ 
 
