@@ -17,6 +17,7 @@
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
     <link rel="stylesheet" href="./css/index.css" />
+      
   </head>
   <body>
     <div class="slider-sl">
@@ -474,7 +475,7 @@
               <h4></h4>
               <h5 class="portfolio-description">
                 В данном портфолио вы сможете увидеть кейсы наших работ на 2022
-                - 2023 год
+                - 2025 год
               </h5>
               <button class="button-portfolio">
                 <p>Компьютерные версии</p>
@@ -771,11 +772,7 @@
             <div class="forma-text">
               <p>Оставь заявку</p>
             </div>
-            <form
-              action="https://formsubmit.co/priz8090@gmail.com"
-              method="POST"
-              class="forma_"
-            >
+            <form action="./send.php" method="POST" class="forma_">
               <div class="description description_block">
                 <label for="fio">Ваше ФИО*</label>
                 <input
@@ -894,7 +891,6 @@
           </div>
         </div>
       </section>
-
       <section class="contact-ball_container">
         <div class="contact-ball_block">
           <div class="contact-ball contact-ball_s draggable" id="contactball-s">
@@ -961,12 +957,20 @@
         </div>
       </div>
     </footer>
+        <!-- Toast с прогресс-баром -->
+    <div id="toast" class="toast">
+      <div class="toast-message">Заявка отправлена! Мы свяжёмся с вами.</div>
+      <div class="toast-progress"></div>
+    </div>
 
     <script async src="./js/slider-main.js"></script>
     <script async src="./js/contacty.js"></script>
     <script async src="./js/slider-portfolio.js"></script>
     <script async src="./js/slider-tarif.js"></script>
     <script async src="./js/burger.js"></script>
+    <script async src="./js/send.js"></script>
+    <script async src="./js/toast.js"></script>
+    <script async src="./js/garland.js"></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
