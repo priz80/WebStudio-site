@@ -2,7 +2,8 @@
 // send.php
 
 // === Настройки Telegram ===
-
+$TELEGRAM_BOT_TOKEN = ''; // ← Заменить!
+$CHAT_ID = ''; // ← Ваш ID (число)
 
 // === Сбор данных из формы ===
 $fio = trim($_POST['fio'] ?? '');
